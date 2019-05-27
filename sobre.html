@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Latest updates and statistic charts">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <section id="containerNav" class="nav d-flex">
+            <nav id="navTopo" class="container-fluid row">
+                <div id="containerSearch" class="justified-content-space-between">
+                    <form action="" method="GET">
+                        <input type="search" name="buscah" size="26" placeholder="  O que você está procurando">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div id="divRightLineTwo">
+                    <!-- Botão para acionar modal -->
+
+                    <button id="buttonLogin" type="button" class="btn btn-outline-info" data-toggle="modal"
+                        data-target="#ExemploModalCentralizado">
+                        <!--<span class="glyphicon glyphicon-log-in"></span>--> Olá, faça seu login!
+                    </button>
+                    <!-- <a href="#"><img src="img/iconeCarP.png" alt=""></a> -->
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+                    aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" method="POST">
+                                    <label>USAR NAME</label>
+                                    <input type="text"><br>
+                                    <label>SENHA</label>
+                                    <input type="password">
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="text" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <nav id="navCenter" class="container-fluid">
+                <div id="containerMeio" class="container-fluid">
+                    <img src="img/logofinal1.png" alt="Logo MeSustenta">
+                </div>
+            </nav>
+            <nav id="navBase" class="container-fluid">
+                <div id="menuBase">
+                    <!--  Comeco menu de Produtor-->
+                    <li id="listaLojas" class="navbar-item dropdown">
+                        <a class="nav-link dropdown-toggle botao-busca tituloMenu" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Lojas</a>
+                        <div class="dropdown-menu subMenu">
+                            <a class="dropdown-item subTitulo" href="#">BIOZ</a>
+                            <a class="dropdown-item subTitulo" href="AlimentosPage.html">RAIZS</a>
+                            <a class="dropdown-item subTitulo" href="#">VIVA AMAZON</a>
+                        </div>
+                    </li>
+                    <!--    Final menu de Produtor-->
+                    <!--   Comeco menu de Departamentos -->
+                    <li id="listaDepartamentos" class="navbar-item dropdown">
+                        <a class="nav-link dropdown-toggle botao-busca tituloMenu" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Departamentos</a>
+                        <div class="dropdown-menu subMenu">
+                            <a class="dropdown-item subTitulo" href="pageDepartamentos.html">Alimentos</a>
+                            <a class="dropdown-item subTitulo" href="#">Beleza</a>
+                            <a class="dropdown-item subTitulo" href="#">Casa</a>
+                            <a class="dropdown-item subTitulo" href="#">Moda</a>
+                        </div>
+                    </li>
+                    <!--   Final menu de Departamentos -->
+                    <li><a class="tituloMenu" href="sobre.html">Quem Somos</a></li>
+                    <li><a class="tituloMenu" href="contato.html">Contato</a></li>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <section class="container sobre-conteudo col-9 col-sm-9 col-md-9">
+        <div class="sobre-imagem">
+        </div>
+
+        <div class="sobre-controle row justify-conten-bettew">
+            <video controls poster="" class="col-md-6">
+                <source src="video/3Rs.mp4" type="video/mp4">
+            </video>
+            <article class="col-md-6">
+                <div class="">
+                    <h2>Nossa História</h2>
+
+                    <p>O site nasceu do desejo de 3 desenvolvedoras de facilitar o acesso a produtos e marcas
+                        sustentáveis, através da concentração destas em um único local. Notamos que um dos grandes
+                        problemas de aderir a este movimento mais consciente é a dificuldade de encontrar produtos
+                        sustentáveis, devido à falta de informação em relação a locais onde comprar, que em sua maioria
+                        são de pequeno porte e se encontram em nichos específicos. Por este motivo, idealizamos um site
+                        que reúne diversas marcas, sejam elas pequenas ou grandes, com intuito de criar um mundo mais
+                        sustentável.</p>
+                </div>
+            </article>
+        </div>
+
+
+    </section>
+
+
+
+
+    <footer>
+        <div class="ftr">
+            <div class="col-l2 offset-l2 s12">
+                <nav id="navCenter" class="container-fluid">
+                    <div id="containerMeio" class="container-fluid">
+                        <label>Follow Us</label>
+                        <ul id="listaRedeSocial" class="row">
+                            <li><a id="iconWhats" href="#" class="fa fa-whatsapp"></a></li>
+                            <li><a id="iconFace" href="#" class="fa fa-facebook"></a></li>
+                            <li><a id="iconTwitter" href="#" class="fa fa-twitter"></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div>
+                <img src="img/logofim.png" alt="Logo" id="imagemlogo">
+            </div>
+            <div>
+                <label> Copyright © 2019 | MeSustenta </label>
+            </div>
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+    </footer>
+
+
+</body>
+
+</html>

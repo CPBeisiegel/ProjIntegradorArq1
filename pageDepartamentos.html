@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!------ Include the above in your HEAD tag ---------->
+    <!------ Carousel ---------->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="Js/pageDepartamentos.js"></script>
+</head>
+
+<body>
+    <header>
+        <section id="containerNav" class="nav d-flex">
+            <nav id="navTopo" class="container-fluid row">
+                <div id="containerSearch" class="justified-content-space-between">
+                    <form action="" method="GET">
+                        <input type="search" name="buscah" size="26" placeholder="  O que você está procurando">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div id="divRightLineTwo">
+                    <!-- Botão para acionar modal -->
+
+                    <button id="buttonLogin" type="button" class="btn btn-outline-info" data-toggle="modal"
+                        data-target="#ExemploModalCentralizado">
+                        <!--<span class="glyphicon glyphicon-log-in"></span>--> Olá, faça seu login!
+                    </button>
+                    <!-- <a href="#"><img src="img/iconeCarP.png" alt=""></a> -->
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+                    aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" method="POST">
+                                    <label>USAR NAME</label>
+                                    <input type="text"><br>
+                                    <label>SENHA</label>
+                                    <input type="password">
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="text" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </nav>
+
+            <nav id="navCenter" class="container-fluid">
+                <div id="containerMeio" class="container-fluid">
+                    <img src="img/logofinal1.png" alt="Logo MeSustenta">
+                </div>
+            </nav>
+            <nav id="navBase" class="container-fluid">
+                <div id="menuBase">
+                    <!--  Comeco menu de Produtor-->
+                    <li id="listaLojas" class="navbar-item dropdown">
+                        <a class="nav-link dropdown-toggle botao-busca tituloMenu" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Lojas</a>
+                        <div class="dropdown-menu subMenu">
+                            <a class="dropdown-item subTitulo" href="#">BIOZ</a>
+                            <a class="dropdown-item subTitulo" href="AlimentosPage.html">RAIZS</a>
+                            <a class="dropdown-item subTitulo" href="#">VIVA AMAZON</a>
+                        </div>
+                    </li>
+                    <!--    Final menu de Produtor-->
+                    <!--   Comeco menu de Departamentos -->
+                    <li id="listaDepartamentos" class="navbar-item dropdown">
+                        <a class="nav-link dropdown-toggle botao-busca tituloMenu" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Departamentos</a>
+                        <div class="dropdown-menu subMenu">
+                            <a class="dropdown-item subTitulo" href="pageDepartamentos.html">Alimentos</a>
+                            <a class="dropdown-item subTitulo" href="#">Beleza</a>
+                            <a class="dropdown-item subTitulo" href="#">Casa</a>
+                            <a class="dropdown-item subTitulo" href="#">Moda</a>
+                        </div>
+                    </li>
+                    <!--   Final menu de Departamentos -->
+                    <li><a class="tituloMenu" href="sobre.html">Quem Somos</a></li>
+                    <li><a class="tituloMenu" href="contato.html">Contato</a></li>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <h5 class="d-flex justify-content-center titulo">ALIMENTOS</h5>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 1" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/1L_SUCO_LARANJA_FRE_ss_baixa.jpg.png"
+                                    alt="slide 1">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 3" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/1L_SUCO_LIMAO_FRE_ss_baixa.jpg.png"
+                                    alt="slide 2">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 4" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/ACHOCOLATADO_sem_sombra_baixa.jpg"
+                                    alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 5" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/ACUCAR_CRISTAL_1KG_sem_sombra_baixa.jpg"
+                                    alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 6" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/AGUA_COCO_FR-sem-sombra_baixa.jpg.png"
+                                    alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 7" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/A_AVEIA_FLOCOS_FINOS_G_FRE_ss.jpg"
+                                    alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 active">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 8" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/B_EXTRATO_SOJA_G_FRE_ss.jpg" alt="slide 4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 9" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/Banana_Verde_Integral.jpg" alt="slide 5">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 10" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/Banana_Verde_Polpa.jpg" alt="slide 6">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 11" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/CX_SACHE_ACUCAR_sem_sombra_baixa.jpg"
+                                    alt="slide 7">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 2" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/Cafe-Organico-Original-250g---Native.jpg"
+                                    alt="slide 8">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 2" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/fribras_g2_fre_sem_sombra_baixa.jpg"
+                                    alt="slide 9">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next text-faded" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 1" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/gregoCoco.png" alt="slide 1">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 3" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/gregoMorango.png" alt="slide 2">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 4" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/leiteAmendoas.png" alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 5" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/leiteCoco.png" alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 6" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/lightAmeixa.png" alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 7" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/lightCoco.png" alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 active">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 8" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/lightMorango1.png" alt="slide 4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 9" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/zeroCoco.png" alt="slide 5">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 10" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/zeroMorango.png" alt="slide 6">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 11" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/gregoCoco.png" alt="slide 7">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 2" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/shakeCoco.png" alt="slide 8">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 2" class="thumb">
+                                <img class="mx-auto d-block" src="img/Vegabom/carrosse/leiteAmendoas.png" alt="slide 9">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next text-faded" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 1" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/ricota.jpg" alt="slide 1">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 3" class="thumb">
+                                <img class="mx-auto d-block"
+                                    src="img/Raizs/Sal-Rosa-do-Himalaia-Fino-Pote-250g---Ecobio.jpg" alt="slide 2">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 4" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/Tapioca.jpg" alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 5" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/granola.png" alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 6" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/molhoPesto.jpg" alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 7" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/untitled-14.jpg" alt="slide 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 active">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 8" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/quinoaMaeTerra.jpg" alt="slide 4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 9" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/pipoca_alto_vacuo.jpg" alt="slide 5">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 10" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/manteiga_semsal.jpg" alt="slide 6">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 11" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/ketchup.jpg" alt="slide 7">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 2" class="thumb">
+                                <img class="mx-auto d-block" src="img/Raizs/granolaBlocada.jpg" alt="slide 8">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item col-md-3  ">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="image 2" class="thumb">
+                                <img class="mx-auto d-block"
+                                    src="img/Raizs/Pao-de-Quinoa-Organico-440g---Monama.jpg.png" alt="slide 9">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next text-faded" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!--FOOTER InÍCIO-->
+    <footer>
+        <div class="ftr">
+            <div class="col-l2 offset-l2 s12">
+                <nav id="navCenter" class="container-fluid">
+                    <div id="containerMeio" class="container-fluid">
+                        <label>Follow Us</label>
+                        <ul id="listaRedeSocial" class="row">
+                            <li><a id="iconWhats" href="#" class="fa fa-whatsapp"></a></li>
+                            <li><a id="iconFace" href="#" class="fa fa-facebook"></a></li>
+                            <li><a id="iconTwitter" href="#" class="fa fa-twitter"></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div>
+                <img src="img/logofim.png" alt="Logo" id="imagemlogo">
+            </div>
+
+            <!--         
+                <div clas="top">
+                    <form method="post" action="/contact" class="contact-form" accept-charset="UTF-8">
+                    <input type="hidden" value="customer" name="form_type" /><input type="hidden" name="utf8" value="✓" />
+                    <div>
+                      <input type="hidden" id="contact_tags" name="contact[tags]" value="newsletter"/>
+                      <input type="text" id="contact_email" name="contact[email]" placeholder="Submit e-mail for special offers...">
+                      <button type="submit" title="Newsletter Signup">OK</button>
+                    </div> -->
+            </form>
+            <label> Copyright © 2019 | MeSustenta </label>
+        </div>
+
+        </div>
+    </footer>
+    <!--FOOTER FINAL-->
+
+    <!--- End of carousel---->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

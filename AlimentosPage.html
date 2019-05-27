@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Latest updates and statistic charts">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/pageProdutos.css">
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <section id="containerNav" class="nav d-flex">
+            <nav id="navTopo" class="container-fluid row">
+                <div id="containerSearch" class="justified-content-space-between">
+                    <form action="" method="GET">
+                        <input type="search" name="buscah" size="26" placeholder="  O que você está procurando">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div id="divRightLineTwo">
+                    <!-- Botão para acionar modal -->
+
+                    <button id="buttonLogin" type="button" class="btn btn-outline-info" data-toggle="modal"
+                        data-target="#ExemploModalCentralizado">
+                        <!--<span class="glyphicon glyphicon-log-in"></span>--> Olá, faça seu login!
+                    </button>
+                    <!-- <a href="#"><img src="img/iconeCarP.png" alt=""></a> -->
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+                    aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" method="POST">
+                                    <label>USAR NAME</label>
+                                    <input type="text"><br>
+                                    <label>SENHA</label>
+                                    <input type="password">
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="text" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <nav id="navCenter" class="container-fluid">
+                <div id="containerMeio" class="container-fluid">
+                    <img src="img/logofinal1.png" alt="Logo MeSustenta">
+                </div>
+            </nav>
+            <nav id="navBase" class="container-fluid">
+                <div id="menuBase">
+                    <!--  Comeco menu de Produtor-->
+                    <li id="listaLojas" class="navbar-item dropdown">
+                        <a class="nav-link dropdown-toggle botao-busca tituloMenu" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Lojas</a>
+                        <div class="dropdown-menu subMenu">
+                            <a class="dropdown-item subTitulo" href="#">BIOZ</a>
+                            <a class="dropdown-item subTitulo" href="AlimentosPage.html">RAIZS</a>
+                            <a class="dropdown-item subTitulo" href="#">VIVA AMAZON</a>
+                        </div>
+                    </li>
+                    <!--    Final menu de Produtor-->
+                    <!--   Comeco menu de Departamentos -->
+                    <li id="listaDepartamentos" class="navbar-item dropdown">
+                        <a class="nav-link dropdown-toggle botao-busca tituloMenu" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Departamentos</a>
+                        <div class="dropdown-menu subMenu">
+                            <a class="dropdown-item subTitulo" href="pageDepartamentos.html">Alimentos</a>
+                            <a class="dropdown-item subTitulo" href="#">Beleza</a>
+                            <a class="dropdown-item subTitulo" href="#">Casa</a>
+                            <a class="dropdown-item subTitulo" href="#">Moda</a>
+                        </div>
+                    </li>
+                    <!--   Final menu de Departamentos -->
+                    <li><a class="tituloMenu" href="sobre.html">Quem Somos</a></li>
+                    <li><a class="tituloMenu" href="contato.html">Contato</a></li>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <div class="container">
+            <h3 class="h3"><img src="img/Raizs/logotipo-raizs.png" alt="Logo Raizs"></h3>
+            <h5 class="h5">DE FAMÍLIA PARA FAMÍLIA</h5>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="img/Raizs/bucha_vegetal.jpg">
+                                <img class="pic-2" src="img/Raizs/bucha_vegetal1.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Produtos de Limpeza</a></h3>
+                            <div class="price">R$ 4,40</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="img/Raizs/cafe.jpg">
+                                <img class="pic-2" src="img/Raizs/cafe1.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Bebidas e Laticinios</a></h3>
+                            <div class="price">R$18,40</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="img/Raizs/Tribos-Azeite.jpg">
+                                <img class="pic-2" src="img/Raizs/Tribos-Azeite1.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Cookies, biscoitos e barrinhas</a></h3>
+                            <div class="price">R$ 2,90</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="img/Raizs/farinha_de_linhaca_dourada_ecobio.jpg">
+                                <img class="pic-2" src="img/Raizs/farinha_de_linhaca_dourada_ecobio1.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Cereais e Farinhas</a></h3>
+                            <div class="price">R$ 6,90</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1"
+                                    src="img/Raizs/Chocolate-Xingu-70--com-Castanha-do-Para-80g---Quetzal.jpg">
+                                <img class="pic-2"
+                                    src="img/Raizs/Chocolate-Xingu-70--com-Castanha-do-Para-80g---Quetzal1.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Chocolates e Doces</a></h3>
+                            <div class="price">R$19,72</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="img/Raizs/Banana_Verde_Integral.jpg">
+                                <img class="pic-2" src="img/Raizs/Banana_Verde_Integral1.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Cereais e Farinhas</a></h3>
+                            <div class="price">R$16,25</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="img/Raizs/granola.png">
+                                <img class="pic-2" src="img/Raizs/granola1.png">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Bebidas e Laticinios</a></h3>
+                            <div class="price">R$18,40</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="img/Raizs/farinha_de_sogro_marsala.jpg">
+                                <img class="pic-2" src="img/Raizs/farinha_de_sogro_marsala1.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Bebidas e Laticinios</a></h3>
+                            <div class="price">R$18,40</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="img/Raizs/Cookie-Cacau-e-Castanha.jpg">
+                                <img class="pic-2" src="img/Raizs/Cookie-Cacau-e-Castanha1.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Cookies, biscoitos e barrinhas</a></h3>
+                            <div class="price">R$ 5,80</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="img/Raizs/IMG_8178.jpg">
+                                <img class="pic-2" src="img/Raizs/IMG_81781.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Cereais e Farinhas</a></h3>
+                            <div class="price">R$ 7,10</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1"
+                                    src="img/Raizs/Gel-Baby-Natural-Banana-Camomila-e-Sidreira---Suavetex-.jpg">
+                                <img class="pic-2"
+                                    src="img/Raizs/Gel-Baby-Natural-Banana-Camomila-e-Sidreira---Suavetex-1.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Boca e Pele</a></h3>
+                            <div class="price">R$19,70</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1"
+                                    src="img/Raizs/Creme-Dental-Natural-com-Extratos-de-Camomila-Uva-e-Melissa-80g--Suavetex.jpg">
+                                <img class="pic-2"
+                                    src="img/Raizs/Creme-Dental-Natural-com-Extratos-de-Camomila-Uva-e-Melissa-80g--Suavetex1.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="" data-tip="Busca"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Lista Desejos"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Carrinho"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Boca e Pele</a></h3>
+                            <div class="price">R$19,67</div>
+                            <a class="add-to-cart" href="">+ Adicionar Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </main>
+    <!--FOOTER InÍCIO-->
+    <footer>
+        <div class="ftr">
+
+            <div class="col-l2 offset-l2 s12">
+                <nav id="navCenter" class="container-fluid">
+                    <div id="containerMeio" class="container-fluid">
+                        <label>Follow Us</label>
+                        <ul id="listaRedeSocial" class="row">
+                            <li><a id="iconWhats" href="#" class="fa fa-whatsapp"></a></li>
+                            <li><a id="iconFace" href="#" class="fa fa-facebook"></a></li>
+                            <li><a id="iconTwitter" href="#" class="fa fa-twitter"></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div>
+                <img src="img/logofim.png" alt="Logo" id="imagemlogo">
+            </div>
+
+            <!--         
+            <div clas="top">
+                <form method="post" action="/contact" class="contact-form" accept-charset="UTF-8">
+                <input type="hidden" value="customer" name="form_type" /><input type="hidden" name="utf8" value="✓" />
+                <div>
+                  <input type="hidden" id="contact_tags" name="contact[tags]" value="newsletter"/>
+                  <input type="text" id="contact_email" name="contact[email]" placeholder="Submit e-mail for special offers...">
+                  <button type="submit" title="Newsletter Signup">OK</button>
+                </div> -->
+            </form>
+            <label> Copyright © 2019 | MeSustenta </label>
+        </div>
+
+        </div>
+    </footer>
+    <!--FOOTER FINAL-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

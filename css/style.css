@@ -14,42 +14,53 @@ body {
 
 #containerNav {
     background: #041847;
+    padding: 0%;
+    width: 100%;
 }
 
 #navTopo {
-    margin: 1% 4% -1.5% 4%;
+    margin: 1% 4% 0% 4%;
     width: 100vw;
-    height: 4vh;
+    height: 16vh;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 #containerSearch form input {
     height: 4vh;
+    font-size: 1em;
+    border-color: #4fc4be;
+    border-radius: 5%;
+    text-align: center;
+}
+
+#containerSearch form input::-moz-placeholder {
+    height: 6vh;
+    size: 30%;
     font-size: 1.1em;
     border-color: #4fc4be;
-    border-radius: 20%;
+    border-radius: 5%;
     text-align: center;
 }
 
 /* alterando caracteristicas do placeholder - inicio */
 #containerSearch form ::-webkit-input-placeholder {
     font-family: 'Lucida Grande';
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-style: oblique;
     color: #4370d7;
 }
 
 #containerSearch form input:-moz-placeholder {
     font-family: 'Lucida Grande';
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-style: oblique;
     color: #4370d7;
 }
 
 #containerSearch form textarea:-moz-placeholder {
     font-family: 'Lucida Grande';
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-style: oblique;
     color: #4370d7;
 }
@@ -61,28 +72,17 @@ body {
 }
 
 #containerSearch form button i {
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #4fc4be;
 }
 
-#buttonLogin {
-    font-size: 0.7em;
-    /*margin: 0 1%;*/
+#buttonLogin{
+    font-size: 0.8em;
+    margin: 1% 0% 0% 0%;
 }
 
 #divRightLineTwo{
     z-index: 10;
-}
-
-#containerMeio {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#containerMeio img {
-    margin: 0% 0 1%;
 }
 
 #navBase {

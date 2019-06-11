@@ -370,7 +370,20 @@ h1#contatonome{
      transform: scale(1.4);
  } 
 
-/* imagem modal  */
+ /* modal Home */
+
+.modalhome{
+    z-index: 1000;
+}
+
+.modal-backdrop{
+    z-index: -1040;
+}
+
+
+ /* modal Home end */
+
+/* imagem  produtos modal  */
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */

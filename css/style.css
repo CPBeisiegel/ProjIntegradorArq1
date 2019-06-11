@@ -380,12 +380,18 @@ h1#contatonome{
     z-index: -1040;
 } */
 
+/* carrousel departamento  */
+
+.dep .carouseller__list{
+
+}
+
+
 
 
 /* Imagem  produtos modal  */
 
-/* The Modal (background) */
-.modal {
+.modal_produto {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 999; /* Sit on top */

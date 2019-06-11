@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Latest updates and statistic charts">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <title>Home</title>
@@ -107,10 +108,10 @@
                 <h1>Formulário de Cadastro</h1>
             </div>
 
-            <form>
+            <form id="form-cadastro">
 
                 <!-- Informações de Pessoais de Cadastro -->
-                <div class="form-group">
+                <div class="form-group" >
 
                     <div>
                         <label>Nome</label>
@@ -173,7 +174,7 @@
 
                 <!-- Informações de Login -->
 
-                <div class="form-group">
+                <div class="form-group" >
 
                     <div>
                         <label for="exampleFormControlInput1">Email</label>
@@ -196,8 +197,8 @@
                         <input type="password" class="form-control" name="confipass" placeholder="confirmar senha">
                     </div>
 
-                    <div>
-                        <input type="submit" class="btn btn-primary">
+                    <div class="btn12">
+                        <button id="bt_submit" type="submit" name='cadastro' class="btn btn-primary">Enviar</button>
                         <input type="reset" value="Limpar" class="btn btn-primary">
                     </div>
                 </div>
@@ -210,38 +211,36 @@
 
 
     <footer>
-        <div class="ftr">
 
-            <div class="col-l2 offset-l2 s12">
-                <nav id="navCenter" class="container-fluid">
-                    <div id="containerMeio" class="container-fluid">
-                        <label>Follow Us</label>
-                        <ul id="listaRedeSocial" class="row">
-                            <li><a id="iconWhats" href="#" class="fa fa-whatsapp"></a></li>
-                            <li><a id="iconFace" href="#" class="fa fa-facebook"></a></li>
-                            <li><a id="iconTwitter" href="#" class="fa fa-twitter"></a></li>
-                        </ul>
-                    </div>
-                </nav>
+        <section class="fot">
+            <div class="ftr">
+                <div class="contato">
+
+                    <nav id="navCenter" class="container-fluid">
+                        <div id="containerMeio" class="container-fluid">
+                            <label>Contato</label>
+                            <ul id="listaRedeSocial" class="row">
+                                <li><a id="iconWhats" href="#" class="fa fa-whatsapp"></a></li>
+                                <li><a id="iconFace" href="#" class="fa fa-facebook"></a></li>
+                                <li><a id="iconTwitter" href="#" class="fa fa-twitter"></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div>
+                    <label> Copyright © 2019 | MeSustenta </label>
+                </div>
+
+                <div>
+                    <img src="img/logofim.png" alt="Logo" id="imagemlogo">
+                </div>
+
+
+
             </div>
-            <div>
-                <img src="img/logofim.png" alt="Logo" id="imagemlogo">
-            </div>
+        </section>
 
-            <!--         
-        <div clas="top">
-            <form method="post" action="/contact" class="contact-form" accept-charset="UTF-8">
-            <input type="hidden" value="customer" name="form_type" /><input type="hidden" name="utf8" value="✓" />
-            <div>
-              <input type="hidden" id="contact_tags" name="contact[tags]" value="newsletter"/>
-              <input type="text" id="contact_email" name="contact[email]" placeholder="Submit e-mail for special offers...">
-              <button type="submit" title="Newsletter Signup">OK</button>
-            </div> -->
-            </form>
-            <label> Copyright © 2019 | MeSustenta </label>
-        </div>
-
-        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -250,10 +249,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
+<script>
+        let formulario = document.querySelector("#form-cadastro");
+        let variaveis = document.querySelectorAll("input");
+        let destinar = document.querySelector("button");
+    // function valida(){
+    //     console.log(formulario);
+    // }
+
+    // document.getElementById('bt_submit').onclick = valida;
+
+        formulario.onsubmit = function (event) {
+            
+          event.preventDefault();
+          numeroEnviado = 0;
+          for (input of variaveis) {
+            if (input.value == "") {
+              input.style.border = "1px solid red";
+              input.setAttribute("placeholder", "Preencha os dados corretamente");
+            } else {
+              input.style.border = "1px solid #ccc";
+              numeroEnviado++;
+            }
+          }
+          
+          if (numeroEnviado == variaveis.length) {
+            document.getElementById('form-cadastro').submit();
+          }
+          
+        }
+        </script>
+      
 
 
 </body>

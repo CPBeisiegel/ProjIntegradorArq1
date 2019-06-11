@@ -100,19 +100,17 @@
     </header>
 
     <!-- formulario para contato  -->
-    <section class="container">
-        <div class="row">
+    <section class="container romd1">
+        <div class="row col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 romd">
 
-            <div class="contato-content">
+            <div class="contato-content col-12 col-sm-10">
                 <div class="contato-titulo">
                     <h1 id="contatonome" href="contato.html">Contato</h1>
                 </div>
-                <form>
+                <form id="form-contato">
                     <div class="form-row">
-                        <!-- <div class="col-md col-lg"> -->
-                        <label>Seu Nome (obrigatório)</label>
-                        <input type="text" class="form-control" placeholder="nome sobrenome">
-                        <!-- </div> -->
+                            <label>Seu Nome (obrigatório)</label>
+                            <input type="text" class="form-control" placeholder="nome sobrenome">
                     </div>
 
                     <div class="form-row">
@@ -123,7 +121,7 @@
 
                     <div class="form-row">
                         <label for="exampleFormControlTextarea1">Assunto</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+                        <input type="text" class="form-control" id="exampleFormControlTextarea1"></input>
                     </div>
                     <div class="form-row">
                         <label for="exampleFormControlTextarea1">Sua Mensagem</label>
@@ -131,7 +129,7 @@
                     </div>
 
                     <div class="botao">
-                        <input type="submit" class="btn btn-primary">
+                        <button id="bt_submit" type="submit" name='cadastro' class="btn btn-primary">Enviar</button>
                         <input type="reset" value="Limpar" class="btn btn-primary">
                     </div>
             </div>
@@ -139,32 +137,42 @@
         </div>
         </div>
     </section>
+    
 
 
 
+    <!-- Footer -->
     <footer>
-        <div class="ftr">
 
-            <div class="col-l2 offset-l2 s12">
-                <nav id="navCenter" class="container-fluid">
-                    <div id="containerMeio" class="container-fluid">
-                        <label>Follow Us</label>
-                        <ul id="listaRedeSocial" class="row">
-                            <li><a id="iconWhats" href="#" class="fa fa-whatsapp"></a></li>
-                            <li><a id="iconFace" href="#" class="fa fa-facebook"></a></li>
-                            <li><a id="iconTwitter" href="#" class="fa fa-twitter"></a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div>
-                <img src="img/logofim.png" alt="Logo" id="imagemlogo">
-            </div>
-            <div>
-                <label> Copyright © 2019 | MeSustenta </label>
-            </div>
+        <section class="fot">
+            <div class="ftr">
+                <div class="contato">
 
-        </div>
+                    <nav id="navCenter" class="container-fluid">
+                        <div id="containerMeio" class="container-fluid">
+                            <label>Contato</label>
+                            <ul id="listaRedeSocial" class="row">
+                                <li><a id="iconWhats" href="#" class="fa fa-whatsapp"></a></li>
+                                <li><a id="iconFace" href="#" class="fa fa-facebook"></a></li>
+                                <li><a id="iconTwitter" href="#" class="fa fa-twitter"></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div>
+                    <label> Copyright © 2019 | MeSustenta </label>
+                </div>
+
+                <div>
+                    <img src="img/logofim.png" alt="Logo" id="imagemlogo">
+                </div>
+
+
+
+            </div>
+        </section>
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -176,7 +184,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
+    <script>
+        let formulario = document.querySelector("#form-contato");
+        let variaveis = document.querySelectorAll("input");
+        let destinar = document.querySelector("button");
+        // function valida(){
+        //     console.log(formulario);
+        // }
 
+        // document.getElementById('bt_submit').onclick = valida;
+
+        formulario.onsubmit = function (event) {
+
+            event.preventDefault();
+            numeroEnviado = 0;
+            for (input of variaveis) {
+                if (input.value == "") {
+                    input.style.border = "1px solid red";
+                    input.setAttribute("placeholder", "Preencha os dados corretamente");
+                } else {
+                    input.style.border = "1px solid #ccc";
+                    numeroEnviado++;
+                }
+            }
+
+            if (numeroEnviado == variaveis.length) {
+                document.getElementById('form-cadastro').submit();
+            }
+
+        }
+    </script>
 
 </body>
 

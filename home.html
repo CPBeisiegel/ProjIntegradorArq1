@@ -38,13 +38,16 @@
                 <div class="row d-flex justify-content-around col-4">
                     <div id="divRightLineTwo" class="col-5">
                         <!-- Botão para acionar modal -->
-                        <button id="buttonLogin" type="button" class="btn btn-outline-info col-12" data-toggle="modal"
-                            data-target="#ExemploModalCentralizado">
-                            <i class="fa fa-user" style="font-size:1.3em;color:#4fc4be"></i> Olá, faça seu login!
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-user" style="font-size:1.3em;color:#4fc4be"
+                                onclick="document.getElementById('id01').style.display='block'"></i> Olá, faça seu
+                            login!
                         </button>
+
                     </div>
                     <!-- Modal -->
-                    
+
                     <div id="cadastrar" class="d-flex align-items-center col-4">
                         <a id="addLogin" href="cadastro.html" style="font-size:0.8em;color:#4fc4be">
                             <i class="fa fa-user-plus" style="font-size:1.3em;color:#4fc4be"></i>
@@ -144,21 +147,24 @@
                     <img src="img/28.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Reutilizar</h3>
-                        <p>A ação de reutilizar um produto é poder dar uma nova utilidade para algo que, normalmente, seria jogado fora</p>
+                        <p>A ação de reutilizar um produto é poder dar uma nova utilidade para algo que, normalmente,
+                            seria jogado fora</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/29.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Reciclar</h3>
-                        <p>Promover uma reciclagem é a transformação de um produto que não pode ser mais utilizado em um novo produto ou matéria-prima.</p>
+                        <p>Promover uma reciclagem é a transformação de um produto que não pode ser mais utilizado em um
+                            novo produto ou matéria-prima.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/30.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Reduzir</h3>
-                        <p>O ato de diminuir o lixo e também a emissão de poluentes através de um consumo mais consciente, poupando também os recursos naturais.</p>
+                        <p>O ato de diminuir o lixo e também a emissão de poluentes através de um consumo mais
+                            consciente, poupando também os recursos naturais.</p>
                     </div>
                 </div>
             </div>
@@ -335,7 +341,7 @@
 
                     <nav id="navCenter" class="container-fluid">
                         <div id="containerMeio" class="container-fluid">
-                            
+
                             <ul id="listaRedeSocial" class="row">
                                 <label>Contato</label>
                                 <li><a id="iconWhats" href="#" class="fa fa-whatsapp"></a></li>
@@ -361,8 +367,8 @@
 
     </footer>
 
-<!-- Modal -->
-<div class="modal fade modalhome" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+    <!-- Modal -->
+    <!-- <div class="modal fade modalhome" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
 aria-labelledby="TituloModalCentralizado" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -388,12 +394,41 @@ aria-labelledby="TituloModalCentralizado" aria-hidden="true">
                 <button type="submit" formaction="/cadastro.html"
                     class="btn btn-outline-info btn-primary">Cadastre-se</button>
                 <button type="submit" class="btn btn-outline-info btn-primary">Login</button>
-                <!--   <button type="text" class="btn btn-secondary btn-info" data-dismiss="modal">Fechar</button>-->
+                 <button type="text" class="btn btn-secondary btn-info" data-dismiss="modal">Fechar</button>-->
+    <!-- </div>
+        </div>
+    </div>
+</div> -->
+
+
+  
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST">
+                        <label>e-mail</label>
+                        <input type="e-mail"><br>
+                        <label>Senha</label>
+                        <input type="password"> <i class="fa fa-eye-slash" style="font-size: 1.4em"></i>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

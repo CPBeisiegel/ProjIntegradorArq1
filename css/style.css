@@ -7,7 +7,7 @@ body {
     font-family: Verdana;
     font-size: 15px;
     min-height: 100vh;
-    position: relative;
+    /* position: relative; */
     overflow-x: hidden;
   
 }
@@ -372,18 +372,18 @@ h1#contatonome{
 
  /* modal Home */
 
-.modalhome{
+/* .modalhome{
     z-index: 1000;
 }
 
 .modal-backdrop{
     z-index: -1040;
-}
+} */
 
 
- /* modal Home end */
 
-/* imagem  produtos modal  */
+/* Imagem  produtos modal  */
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */

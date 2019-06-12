@@ -91,7 +91,6 @@ body {
 }
 
 #menuBase {
-
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -370,13 +369,6 @@ h1#contatonome{
      transform: scale(1.4);
  } 
 
-
-
-
-
-
-
-
 /* Imagem  produtos modal  */
 
  .modal{
@@ -503,13 +495,42 @@ footer .ftr{
         display: block;
     }
 }
-@include media-breakpoint-down(xs) {  }
-@include media-breakpoint-down(sm) { ... }
-@include media-breakpoint-down(md) { ... }
-@include media-breakpoint-down(lg) { ... }
 
-/* Produtos Cards Home */
+@media (max-width: 768px){
+.col-md-4 {
+    max-width: 80%;
+    font-size: small;
+    }
+#containerMeio img{
+    max-width: 80%;
+    }    
+#containerSearch{
+    padding-right: 0px;
+    padding-left: 0px;
+    }
 
+#containerSearch form button i {
+        font-size: 1em;
+    }
+    
+#containerSearch form input::-moz-placeholder {
+        max-height: 5%;
+        size: 20%;  
+        font-size: 1em;
+        border-color: #4fc4be;
+        border-radius: 5%;
+        text-align: center;
+    }
+    
 .thumbnail img {
     max-width: 250px;
+    }
+    
+#buttonLogin{
+        font-size: 0.7em;
+    }
+
+#menuEnd{
+    flex-flow: row wrap;
+}
 }

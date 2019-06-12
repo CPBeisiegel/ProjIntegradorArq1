@@ -1,0 +1,129 @@
+
+
+
+
+
+
+
+
+
+
+
+
+/* pagina sobre begin */
+
+.sobre-conteudo.sobre-imagem {
+    height: 40%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-image: url(../img/3rs-590x245.jpg);
+    background-size: cover;
+  }
+  
+  .sobre-conteudo .sobre-controle {
+    background-color: #fff;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    background-image: url()
+  }
+  
+  .sobre-conteudo .sobre-controle video {
+    width: 80%;
+    height: 60vh;
+    object-fit: cover;
+  }
+ 
+  
+  .sobre-conteudo .sobre-controle article {
+    width: 60%;
+    display: flex;
+    padding: 3%;
+    justify-content: space-around;
+  }
+  
+  .sobre-conteudo .sobre-controle p {
+    margin-top: 1%;
+    text-align: justify;
+  }
+ .textovideo{
+     font-size: 16px;
+ }
+
+/* pagina sobre end */
+
+
+/* imagem logo */
+#imagemlogo {
+    width: 40%;
+    height: 40%;
+}
+
+
+
+/* video */
+
+.videomd{
+    align-self: center;
+    
+}
+
+
+/* footer begin */
+footer{
+    position: absolute;
+    width: 100%;
+    left: 0%
+  
+}
+
+footer .ftr{
+    bottom: 0px;
+    width: 100%;
+    height: 90px;
+    background-color: #041847;
+    color: #4fc4be;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0% 0% 0%;
+}
+
+
+#listaRedeSocial {
+    list-style: none;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+/* .fot{
+    display: flex;
+}
+.contato{
+    width: 10%;
+
+} */
+/* footer end */
+
+@media (max-width: 480px){
+    #menuBase{
+        display: none;
+    }
+    #toggle{
+        display: block;
+    }
+}
+@include media-breakpoint-down(xs) {  }
+@include media-breakpoint-down(sm) { ... }
+@include media-breakpoint-down(md) { ... }
+@include media-breakpoint-down(lg) { ... }
+
+/* Produtos Cards Home */
+
+.thumbnail img {
+    max-width: 250px;
+}

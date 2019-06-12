@@ -7,7 +7,7 @@ body {
     font-family: Verdana;
     font-size: 15px;
     min-height: 100vh;
-    position: relative;
+    /* position: relative; */
     overflow-x: hidden;
   
 }
@@ -369,9 +369,34 @@ h1#contatonome{
      transform: scale(1.4);
  } 
 
+<<<<<<< HEAD
 /* imagem modal  */
 /* The Modal (background) */
 .modal {
+=======
+ /* modal Home */
+
+/* .modalhome{
+    z-index: 1000;
+}
+
+.modal-backdrop{
+    z-index: -1040;
+} */
+
+/* carrousel departamento  */
+
+.dep .carouseller__list{
+
+}
+
+
+
+
+/* Imagem  produtos modal  */
+
+.modal_produto {
+>>>>>>> 0334ed3794bbddf12044107a8fa6e08811bb6aaa
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 999; /* Sit on top */
@@ -504,6 +529,7 @@ footer .ftr{
         display: block;
     }
 }
+<<<<<<< HEAD
 
 @media (max-width: 768px){
 .col-md-4 {
@@ -542,4 +568,15 @@ footer .ftr{
 #menuEnd{
     flex-flow: row wrap;
 }
+=======
+@include media-breakpoint-down(xs) {  }
+@include media-breakpoint-down(sm) { ... }
+@include media-breakpoint-down(md) { ... }
+@include media-breakpoint-down(lg) { ... }
+
+/* Produtos Cards Home */
+
+.thumbnail img {
+    max-width: 250px;
+>>>>>>> 0334ed3794bbddf12044107a8fa6e08811bb6aaa
 }

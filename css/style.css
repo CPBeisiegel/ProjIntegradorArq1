@@ -494,9 +494,9 @@ footer .ftr{
     #toggle{
         display: block;
     }
-}
+} 
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
 .col-md-4 {
     max-width: 80%;
     font-size: small;
@@ -520,17 +520,17 @@ footer .ftr{
         border-color: #4fc4be;
         border-radius: 5%;
         text-align: center;
-    }
+    } */
     
 .thumbnail img {
     max-width: 250px;
     }
     
-#buttonLogin{
+/* #buttonLogin{
         font-size: 0.7em;
     }
 
 #menuEnd{
     flex-flow: row wrap;
 }
-}
+} */

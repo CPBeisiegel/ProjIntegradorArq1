@@ -7,7 +7,7 @@ body {
     font-family: Verdana;
     font-size: 15px;
     min-height: 100vh;
-    position: relative;
+    /* position: relative; */
     overflow-x: hidden;
   
 }
@@ -373,18 +373,9 @@ h1#contatonome{
      transform: scale(1.4);
  } 
 
-/* imagem modal  */
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 999; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+/* Imagem  produtos modal  */
+
+ .modal{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
@@ -507,9 +498,9 @@ footer .ftr{
     #toggle{
         display: block;
     }
-}
+} 
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
 .col-md-4 {
     max-width: 80%;
     font-size: small;
@@ -533,17 +524,17 @@ footer .ftr{
         border-color: #4fc4be;
         border-radius: 5%;
         text-align: center;
-    }
+    } */
     
 .thumbnail img {
     max-width: 250px;
     }
     
-#buttonLogin{
+/* #buttonLogin{
         font-size: 0.7em;
     }
 
 #menuEnd{
     flex-flow: row wrap;
 }
-}
+} */

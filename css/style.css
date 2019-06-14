@@ -500,7 +500,7 @@ footer .ftr{
     }
 } 
 
-/* @media (max-width: 768px){
+@media (max-width: 768px){
 .col-md-4 {
     max-width: 80%;
     font-size: small;
@@ -537,4 +537,4 @@ footer .ftr{
 #menuEnd{
     flex-flow: row wrap;
 }
-} */
+} 

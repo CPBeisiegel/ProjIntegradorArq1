@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Latest updates and statistic charts">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
@@ -78,9 +77,34 @@
                     </div>
             </nav>
             <nav id="navBase" class="container-fluid">
-                <!-- Menu Hamburguer--> <a id="toggle" href="#">☰</a>
+                <!-- Menu Hamburguer Início-->
+                <div id="toggle" href="#">
+                    <span></span>
+                </div>
+                <div id="menuResponsivo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Lojas</a></li>
+                            <ul>
+                                <li><a href="#">BIOZ</a></li>
+                                <li><a href="#">RAIZS</a></li>
+                                <li><a href="#">VIVA AMAZON</a></li>
+                            </ul>
+                        <li><a href="#">Departamentos</a></li>
+                            <ul>
+                                <li><a href="pageDepartamentos.html">Alimentos</a></li>
+                                <li><a href="#">Beleza</a></li>
+                                <li><a href="#">Casa</a></li>
+                                <li><a href="#">Moda</a></li>
+                            </ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                    <!-- Menu Hamburguer Fim-->
                 <div id="menuBase">
                     <!--  Comeco menu de Produtor-->
+                    <li>Home</li>
                     <li id="listaLojas" class="navbar-item dropdown">
     
                         <a class="nav-link dropdown-toggle botao-busca tituloMenu" data-toggle="dropdown" href="#"
@@ -331,7 +355,7 @@
             </div>
         </section>
     </footer>
-
+    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

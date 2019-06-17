@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
   
 }
-
+/* Início Header*/
 #containerNav {
     background: #041847;
     padding: 0%;
@@ -96,9 +96,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
-#toggle{
-    display: none;
-}
 
 .subMenu {
     border: none;
@@ -126,8 +123,155 @@ body {
 #listaMenu {
     list-style: none;
 }
+    /*Menu Responsivo Início*/
+#toggle{
+    display: visible;
+}
 
+#menuResponsivo{
+    display: visible;
+} 
 
+/* Criando o Hamburguer - Início*/
+
+#toggle{
+    width: 27px;
+    height: 27px;
+    margin: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+#toggle span,
+#toggle span:before,
+#toggle span:after{
+    background: #4fc4be;
+    display: block;
+    height: 4px;
+    position: absolute;
+    transition: all 300ms ease;
+}
+
+#toggle span:before,
+#toggle span:after{
+    content: '';
+}
+
+#toggle span{
+    right: 0px;
+    top: 13px;
+    width: 27px;
+}
+
+#toggle span:before{
+    left: 0px;
+    top: -10px;
+    width: 27px;
+}
+
+#toggle span:after{
+    left: 0px;
+    top: 10px;
+    width: 27px;
+}
+
+/* Criando o Hamburguer - Fim*/
+
+    /* Criando o X - Início*/
+
+#toggle.close span{
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+    background: #4fc4be;
+}
+
+#toggle.close span:before{
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+    background: #4fc4be;
+}
+
+#toggle.close span:after{
+    top: 0px;
+    left: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+    opacity: 0;
+}
+
+    /* Criando o X - Fim*/
+
+    #menuResponsivo{
+        z-index: 1;
+        min-width: 100%;
+        min-height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        text-align: center;
+        padding-top: 20px;
+        visibility: hidden;
+        transition: all 300ms ease; 
+    }
+    
+    #menuResponsivo.show{
+        opacity: 1;
+        visibility: visible;
+        padding-top: 100px;
+        background: rgba(0,0,0,0.8);
+    }
+    
+    #menuResponsivo li{
+        list-style: none;
+        position: relative;
+        width: 300px;
+        margin: auto;
+    }
+    
+    #menuResponsivo li:hover{
+        letter-spacing: 4px;
+    }
+    
+    #menuResponsivo li a{
+        color: white;
+        display: block;
+        font-size: 32px;
+        text-decoration: none;
+        margin-bottom: 30px;
+        position: relative;
+        transition: all 300ms;
+    }
+    
+    #menuResponsivo li a:before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url(../image/trazo-menu1.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transform: scale(0);
+        transition: all 300ms;
+    }
+    
+    #menuResponsivo li a:hover:before{
+        opacity: 1;
+        transform: scale(1);
+    }
+    /*Menu Responsivo Fim*/
+
+/* Fim Header*/
+
+/* HOME Initiation */
 #banner img {
     max-width: 15vw;
     max-height: 14vh;
@@ -161,7 +305,8 @@ body {
 #profile-grid .thumbnail {margin-bottom:6px;}
 #profile-grid .panel-thumbnail { overflow: hidden; }
 #profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
-    /* Carrossel End */
+    
+/* Carrossel End */
         /* Page Departamentos END */
 
 /* Produtos Home */
@@ -491,50 +636,52 @@ footer .ftr{
 } */
 /* footer end */
 
-@media (max-width: 480px){
+
+@media (max-width: 768px){
     #menuBase{
         display: none;
     }
     #toggle{
         display: block;
     }
-} 
 
-@media (max-width: 768px){
-.col-md-4 {
-    max-width: 80%;
-    font-size: small;
+    #menuResponsivo{
+        display: block;
     }
-#containerMeio img{
-    max-width: 80%;
+    .col-md-4 {
+        max-width: 80%;
+        font-size: small;
+    }
+    #containerMeio img{
+        max-width: 80%;
     }    
-#containerSearch{
-    padding-right: 0px;
-    padding-left: 0px;
+    #containerSearch{
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
-#containerSearch form button i {
+    #containerSearch form button i {
         font-size: 1em;
     }
     
-#containerSearch form input::-moz-placeholder {
+    #containerSearch form input::-moz-placeholder {
         max-height: 5%;
         size: 20%;  
         font-size: 1em;
         border-color: #4fc4be;
         border-radius: 5%;
         text-align: center;
-    } */
+    } 
     
-.thumbnail img {
-    max-width: 250px;
+    .thumbnail img {
+        max-width: 250px;
     }
     
-/* #buttonLogin{
+    #buttonLogin{
         font-size: 0.7em;
     }
 
-#menuEnd{
-    flex-flow: row wrap;
-}
+    #menuEnd{
+        flex-flow: row wrap;
+    }   
 } 

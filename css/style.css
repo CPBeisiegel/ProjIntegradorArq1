@@ -222,7 +222,7 @@ body {
         opacity: 1;
         visibility: visible;
         padding-top: 100px;
-        background: rgba(0,0,0,0.8);
+        background: #041847;
     }
     
     #menuResponsivo li{
@@ -266,6 +266,18 @@ body {
     #menuResponsivo li a:hover:before{
         opacity: 1;
         transform: scale(1);
+    }
+
+    .subItemMenu{ 
+        display: none; 
+    }
+   
+    #menuResponsivo li:hover ul{
+        display: block;
+    } 
+   
+   .subItemMenu li:hover ul{ 
+       display: block; 
     }
     /*Menu Responsivo Fim*/
 

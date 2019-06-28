@@ -14,3 +14,22 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/teste', function() {
+    return view('template');
+});
+Route::get('/home',function(){
+    return view('home');
+});
+Route::get('/cadastro',function(){
+    return view('cadastro');
+});
+Route::get('/contato',function(){
+    return view('contato');
+});
+Route::get('/sobre', function(){
+    return view('sobre');
+});
+Route::get('/produto', function(){
+    return view('produto');
+});

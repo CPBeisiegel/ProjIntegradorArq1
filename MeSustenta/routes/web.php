@@ -33,3 +33,6 @@ Route::get('/sobre', function(){
 Route::get('/produto', function(){
     return view('produto');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

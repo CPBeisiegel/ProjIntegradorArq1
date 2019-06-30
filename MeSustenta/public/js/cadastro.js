@@ -1,5 +1,5 @@
 let formulario = document.querySelector("#form-cadastro");
-let variaveis = document.querySelectorAll("input");
+let variaveis = document.querySelectorAll(".casds");
 let destinar = document.querySelector("button");
 // function valida(){
 //     console.log(formulario);

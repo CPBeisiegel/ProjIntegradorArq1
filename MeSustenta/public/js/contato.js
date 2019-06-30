@@ -1,12 +1,8 @@
 
         let formulario = document.querySelector("#form-contato");
-        let variaveis = document.querySelectorAll("input");
-        let destinar = document.querySelector("button");
-        // function valida(){
-        //     console.log(formulario);
-        // }
-
-        // document.getElementById('bt_submit').onclick = valida;
+        let variaveis = document.querySelectorAll(".conts");
+        let destinar = document.querySelector("btn-conts");
+        
 
         formulario.onsubmit = function (event) {
 
@@ -23,7 +19,7 @@
             }
 
             if (numeroEnviado == variaveis.length) {
-                document.getElementById('form-cadastro').submit();
+                document.getElementById('form-contato').submit();
             }
 
         }

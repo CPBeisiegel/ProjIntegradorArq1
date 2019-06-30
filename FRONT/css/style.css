@@ -275,15 +275,17 @@ body {
     }
 
     .subItem{
-        font-size: 0.5em;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+       color: red;
     }
    
     #menuResponsivo li:hover ul{
         display: block;
     } 
+
+    #ola{
+        background-color: red;
+        font-size: 100px;
+    }
    
    .subItemMenu li:hover ul{ 
        display: block; 

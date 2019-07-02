@@ -273,22 +273,28 @@ body {
     .subItemMenu{ 
         display: none;
     }
-
-    .subItem{
-       color: red;
-    }
    
     #menuResponsivo li:hover ul{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: rgba(247, 231, 231,0.8);     
     } 
 
-    #ola{
-        background-color: red;
-        font-size: 100px;
+    .subItemMenu li{
+        color: #041847;
+        font-size: 0.6em;
+        border-radius: 20%;
     }
    
+    .subItemMenu li a{
+        color: #041847;
+    }
+
    .subItemMenu li:hover ul{ 
        display: block; 
+       letter-spacing: 4px;
     }
     /*Menu Responsivo Fim*/
 

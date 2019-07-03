@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateComprasTable extends Migration
+class Categorias extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreateComprasTable extends Migration
      */
     public function up()
     {
-        Schema::create('compras', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('categorias', function (Blueprint $table) {
+            $table->bigIncrements('idCategoria');
+            $table->string("tipo_categoria", 200);
+            $table->string("descricao", 150);
+            $table->string("departamento", 45);
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateComprasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('compras');
+        Schema::dropIfExists('categorias');
     }
 }

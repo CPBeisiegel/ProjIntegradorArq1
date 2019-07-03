@@ -269,9 +269,11 @@ body {
         opacity: 1;
         transform: scale(1);
     }
-    
+
     .subItemMenu{ 
         display: none;
+        right: 0;
+        min-width: 20%;
     }
    
     #menuResponsivo li:hover ul{

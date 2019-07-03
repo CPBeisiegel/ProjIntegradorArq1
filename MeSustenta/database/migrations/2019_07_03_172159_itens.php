@@ -13,7 +13,13 @@ class Itens extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('itens', function (Blueprint $table) {
+            $table->bigIncrements('idItem');
+            $table->decimal("numero_item", 45);
+            $table->string("nome_item", 45);
+            $table->decimal("valor_unitario", 45);
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +29,6 @@ class Itens extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('itens');
     }
 }

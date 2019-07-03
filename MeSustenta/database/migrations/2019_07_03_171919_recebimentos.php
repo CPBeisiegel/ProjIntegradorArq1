@@ -13,7 +13,16 @@ class Recebimentos extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('recebimentos', function (Blueprint $table) {
+            $table->bigIncrements('idRecebimento');
+            $table->string("nome_produto", 45);
+            $table->string("pagamento", 45);
+            $table->string("descricao", 45);
+            $table->integer("Fk_idPagamento");
+            $table->timestamps();
+
+            $table->foreign('Fk_idPagamento')->references('idPagamento')->on('pagamentos');
+        });
     }
 
     /**
@@ -23,6 +32,6 @@ class Recebimentos extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('recebimentos');
     }
 }

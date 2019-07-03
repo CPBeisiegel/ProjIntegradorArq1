@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class logins extends Migration
+class Adm extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class logins extends Migration
      */
     public function up()
     {
-        Schema::create('password_resets', function (Blueprint $table) {
-            $table->string('email')->index();
-            $table->string('token');
-            $table->timestamp('created_at')->nullable();
+        Schema::create('adm', function (Blueprint $table) {
+            $table->bigIncrements('idAdm');
+            $table->integer("nivel_acesso", 45);
+            $table->timestamps();
         });
     }
 
@@ -27,6 +27,6 @@ class logins extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('password_resets');
+        Schema::dropIfExists('adm');
     }
 }

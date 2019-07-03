@@ -18,7 +18,12 @@ class UltimasBuscas extends Migration
             $table->string("departamentos_ult", 45);
             $table->string("nome_ult", 45);
             $table->string("categoria_ult", 45);
+            $table->integer('Fk_idCliente',45);
+            $table->integer('Fk_idCategorias',45);
             $table->timestamps();
+
+            $table->foreign('Fk_idCliente')->references('idCliente')->on('clientes');
+            $table->foreign('Fk_idCategorias')->references('idCategoria')->on('categorias');
         });
     }
 

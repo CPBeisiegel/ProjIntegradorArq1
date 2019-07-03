@@ -103,4 +103,6 @@
         
     </div>
 
+
+    <script src="{{asset('js/produto.js')}}"></script>
 @endsection    

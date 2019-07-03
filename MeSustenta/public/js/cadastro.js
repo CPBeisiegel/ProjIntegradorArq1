@@ -1,17 +1,17 @@
-let formulario = document.querySelector("#form-cadastro");
-let variaveis = document.querySelectorAll(".casds");
-let destinar = document.querySelector("button");
+let formulariocadastro = document.querySelector("#form-cadastro");
+let variaveiscadastro = document.querySelectorAll(".casds");
+let destinarcadastro = document.querySelector("button");
 // function valida(){
 //     console.log(formulario);
 // }
 
 // document.getElementById('bt_submit').onclick = valida;
 
-formulario.onsubmit = function (event) {
+formulariocadastro.onsubmit = function (event) {
     
   event.preventDefault();
   numeroEnviado = 0;
-  for (input of variaveis) {
+  for (input of variaveiscadastro) {
     if (input.value == "") {
       input.style.border = "1px solid red";
       input.setAttribute("placeholder", "Preencha os dados corretamente");
@@ -21,7 +21,7 @@ formulario.onsubmit = function (event) {
     }
   }
   
-  if (numeroEnviado == variaveis.length) {
+  if (numeroEnviado == variaveiscadastro.length) {
     document.getElementById('form-cadastro').submit();
   }
   

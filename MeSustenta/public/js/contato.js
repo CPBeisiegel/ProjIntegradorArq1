@@ -1,14 +1,14 @@
 
-        let formulario = document.querySelector("#form-contato");
-        let variaveis = document.querySelectorAll(".conts");
-        let destinar = document.querySelector("btn-conts");
+        let formulariocontato = document.querySelector("#form-contato");
+        let variaveiscontato = document.querySelectorAll(".conts");
+        let destinarcontato = document.querySelector("btn-conts");
         
 
-        formulario.onsubmit = function (event) {
+        formulariocontato.onsubmit = function (event) {
 
             event.preventDefault();
             numeroEnviado = 0;
-            for (input of variaveis) {
+            for (input of variaveiscontato) {
                 if (input.value == "") {
                     input.style.border = "1px solid red";
                     input.setAttribute("placeholder", "Preencha os dados corretamente");
@@ -18,7 +18,7 @@
                 }
             }
 
-            if (numeroEnviado == variaveis.length) {
+            if (numeroEnviado == variaveiscontato.length) {
                 document.getElementById('form-contato').submit();
             }
 

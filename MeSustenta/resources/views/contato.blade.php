@@ -38,8 +38,10 @@
             </form>
         </div>
         </div>
-    </section
+    </section>
     
 
+    
+ <script src="{{asset('js/contato.js')}}"></script>
 
 @endsection

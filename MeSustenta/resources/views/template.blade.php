@@ -216,9 +216,7 @@
         </section>
     </footer>
     <script src="{{asset('js/script.js')}}"></script>
-    <script src="{{asset('js/cadastro.js')}}"></script>
-    <script src="{{asset('js/contato.js')}}"></script>
-    <script src="{{asset('js/produto.js')}}"></script>
+
     <!-- <script src="{{asset('js/script.js')}}"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

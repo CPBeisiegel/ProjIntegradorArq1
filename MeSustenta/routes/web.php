@@ -18,21 +18,18 @@ Route::get('/', function () {
 Route::get('/teste', function() {
     return view('template');
 });
-Route::get('/home',function(){
-    return view('home');
-});
-Route::get('/cadastro',function(){
-    return view('cadastro');
-});
-Route::get('/contato',function(){
-    return view('contato');
-});
-Route::get('/sobre', function(){
-    return view('sobre');
-});
-Route::get('/produto', function(){
-    return view('produto');
-});
+
+Route::get('/principal',"PrincipalController@index");
+
+Route::get('/cadastro','CadastroController@index');
+Route::get('/contato','ContatoController@index');
+Route::get('/sobre', 'SobreController@index');
+Route::get('/produto', 'ProdutoController@index');
+Route::get('/alimentos', 'AlimentosController@index');
+Route::get('/departamentos','DepartamentoController@index');
+Route::get('/carrinho', 'CarrinhoController@index');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

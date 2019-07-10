@@ -15,16 +15,16 @@ class Pedidos extends Migration
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->bigIncrements('idPedidos');
-            $table->string('CodigoCliente',45);
-            $table->string('DataDoPedido',45);
-            $table->string('DataDeEntrega',45);
-            $table->string('DataDeEnvio',45);
-            $table->string('Frete',45);
-            $table->string('NomeDestinatario',45);
-            $table->string('EnderecoDestinatario',45);
-            $table->string('CidadeDestino',45);
-            $table->decimal('CepDestino',45);
-            $table->integer('Pedidos_itens',45);
+            $table->string('codigoCliente');
+            $table->string('dataDoPedido');
+            $table->string('dataDeEntrega');
+            $table->string('dataDeEnvio');
+            $table->string('frete');
+            $table->string('nomeDestinatario');
+            $table->string('enderecoDestinatario');
+            $table->string('cidadeDestino');
+            $table->decimal('cepDestino');
+            $table->bigInteger('pedidos_itens');
             $table->timestamps();
 
         });

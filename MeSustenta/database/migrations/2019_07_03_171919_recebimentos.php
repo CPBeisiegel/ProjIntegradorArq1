@@ -15,13 +15,13 @@ class Recebimentos extends Migration
     {
         Schema::create('recebimentos', function (Blueprint $table) {
             $table->bigIncrements('idRecebimento');
-            $table->string("nome_produto", 45);
-            $table->string("pagamento", 45);
-            $table->string("descricao", 45);
-            $table->integer("Fk_idPagamento");
+            $table->string("nome_produto");
+            $table->string("pagamento");
+            $table->string("descricao");
+            $table->unsignedBigInteger("fk_idPagamento");
             $table->timestamps();
 
-            $table->foreign('Fk_idPagamento')->references('idPagamento')->on('pagamentos');
+            $table->foreign('fk_idPagamento')->references('idPagamento')->on('pagamentos');
         });
     }
 

@@ -12,16 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('template');
 });
 
 Route::get('/teste', function() {
-    return view('template');
+    return view('welcome');
 });
 
 Route::get('/principal',"PrincipalController@index");
 
 Route::get('/cadastro','CadastroController@index');
+Route::post('/cadastro', 'Auth\RegisterController@create');
 Route::get('/contato','ContatoController@index');
 Route::get('/sobre', 'SobreController@index');
 Route::get('/produto', 'ProdutoController@index');
@@ -34,6 +35,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');

@@ -9,30 +9,30 @@
         <h1>Formulário de Cadastro</h1>
     </div>
 
-    <form id="form-cadastro">
-
+    <form id="form-cadastro" method="POST" action="/cadastro">
+    @csrf
         <!-- Informações de Pessoais de Cadastro -->
         <div class="form-group" >
 
             <div>
                 <label>Nome</label>
-                <input type="text" class="form-control casds" placeholder="Nome">
+                <input type="text" class="form-control casds" name="name" placeholder="Nome">
             </div>
             <div>
                 <label>Sobrenome</label>
-                <input type="text" class="form-control casds" placeholder="Sobrenome">
+                <input type="text" class="form-control casds" name="lastName" placeholder="Sobrenome">
             </div>
             <div>
                 <label>Data de Nascimento</label>
-                <input type="date" class="form-control casds" placeholder="Data de Nascimento">
+                <input type="date" class="form-control casds" name='data_nasc' placeholder="Data de Nascimento">
             </div>
             <div>
                 <label>RG</label>
-                <input type="text" class="form-control casds" placeholder="RG">
+                <input type="text" class="form-control casds" name='rg' placeholder="RG">
             </div>
             <div>
                 <label>CPF</label>
-                <input type="text" class="form-control casds" placeholder="CPF">
+                <input type="text" class="form-control casds" name='cpf' placeholder="CPF">
             </div>
 
         </div>
@@ -43,32 +43,32 @@
 
             <div>
                 <label for="endereco">Endereço</label>
-                <input type="text" class="form-control casds" id="end" placeholder="Endereço">
+                <input type="text" class="form-control casds" id="end" name='endereco' placeholder="Endereço">
             </div>
 
             <div>
                 <label for="numb">Número</label>
-                <input type="number" class="form-control casds" placeholder="Número">
+                <input type="number" class="form-control casds" name='num_end' placeholder="Número">
             </div>
 
             <div>
                 <label for="bairro">Bairro</label>
-                <input type="text" class="form-control casds" placeholder="Bairro">
+                <input type="text" class="form-control casds" name='bairro' placeholder="Bairro">
             </div>
 
             <div>
                 <label for="estado">Estado</label>
-                <input type="text" class="form-control casds" placeholder="Estado">
+                <input type="text" class="form-control casds" name='uf' placeholder="Estado">
             </div>
 
             <div>
                 <label for="cid">Cidade</label>
-                <input type="text" class="form-control casds" placeholder="Cidade">
+                <input type="text" class="form-control casds" name='cidade' placeholder="Cidade">
             </div>
 
             <div>
                 <label for="cep">CEP</label>
-                <input type="number" class="form-control casds" placeholder="CEP">
+                <input type="number" class="form-control casds" name='cep' placeholder="CEP">
             </div>
 
         </div>
@@ -79,18 +79,13 @@
 
             <div>
                 <label for="exampleFormControlInput1">Email</label>
-                <input type="email" class="form-control casds" id="exampleFormControlInput1"
+                <input type="email" class="form-control casds" id="exampleFormControlInput1" name="email"
                     placeholder="nome@email.com">
             </div>
 
             <div>
-                <label for="login">Nome de login</label>
-                <input type="text" class="form-control casds" placeholder="Nome de Login">
-            </div>
-
-            <div>
                 <label for="password">Senha</label>
-                <input type="password" class="form-control casds" name="pass" placeholder="senha">
+                <input type="password" class="form-control casds" name="password" placeholder="senha">
             </div>
 
             <div>

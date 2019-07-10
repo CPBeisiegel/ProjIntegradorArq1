@@ -19,6 +19,8 @@ class Cliente extends Authenticatable
         'name', 'email', 'password',
     ];
 
+    protected $primarykey = 'idCliente';
+
     /**
      * The attributes that should be hidden for arrays.
      *

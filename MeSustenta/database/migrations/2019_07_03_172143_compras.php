@@ -15,15 +15,15 @@ class Compras extends Migration
     {
         Schema::create('compras', function (Blueprint $table) {
             $table->bigIncrements('idCompra');
-            $table->timestamp("data_compra", 45);
-            $table->timestamp("data_entrega", 45);
-            $table->dateTime("frete", 45);
-            $table->integer("Fk_idCliente");
-            $table->integer("Fk_idPagamento");
+            $table->date("data_compra");
+            $table->date("data_entrega");
+            $table->dateTime("frete");
+            $table->unsignedBigInteger("fk_idCliente");
+            $table->unsignedBigInteger("fk_idPagamento");
             $table->timestamps();
 
-            $table->foreign('Fk_idCliente')->references('idCliente')->on('clientes');
-            $table->foreign('Fk_idPagamento')->references('idPagamento')->on('pagamentos');
+            $table->foreign('fk_idCliente')->references('idCliente')->on('clientes');
+            $table->foreign('fk_idPagamento')->references('idPagamento')->on('pagamentos');
         });
     }
 

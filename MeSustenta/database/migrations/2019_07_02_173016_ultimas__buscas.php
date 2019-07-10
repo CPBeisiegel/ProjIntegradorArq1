@@ -13,17 +13,17 @@ class UltimasBuscas extends Migration
      */
     public function up()
     {
-        Schema::create('ultimas__buscas', function (Blueprint $table) {
+        Schema::create('ultimas_buscas', function (Blueprint $table) {
             $table->bigIncrements('idUltimasBuscas');
-            $table->string("departamentos_ult", 45);
-            $table->string("nome_ult", 45);
-            $table->string("categoria_ult", 45);
-            $table->integer('Fk_idCliente',45);
-            $table->integer('Fk_idCategorias',45);
+            $table->string("departamentos_ult");
+            $table->string("nome_ult");
+            $table->string("categoria_ult");
+            $table->unsignedBigInteger('fk_idCliente');
+            $table->unsignedBigInteger('fk_idCategoria');
             $table->timestamps();
 
-            $table->foreign('Fk_idCliente')->references('idCliente')->on('clientes');
-            $table->foreign('Fk_idCategorias')->references('idCategoria')->on('categorias');
+            $table->foreign('fk_idCliente')->references('idCliente')->on('clientes');
+            $table->foreign('fk_idCategoria')->references('idCategoria')->on('categorias');
         });
     }
 

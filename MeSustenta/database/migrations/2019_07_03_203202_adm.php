@@ -15,7 +15,7 @@ class Adm extends Migration
     {
         Schema::create('adm', function (Blueprint $table) {
             $table->bigIncrements('idAdm');
-            $table->integer("nivel_acesso", 45);
+            $table->bigInteger("nivel_acesso");
             $table->timestamps();
         });
     }

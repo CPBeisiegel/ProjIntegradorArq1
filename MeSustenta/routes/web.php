@@ -28,11 +28,14 @@ Route::get('/produto', 'ProdutoController@index');
 Route::get('/alimentos', 'AlimentosController@index');
 Route::get('/departamentos','DepartamentoController@index');
 Route::get('/carrinho', 'CarrinhoController@index');
+Route::get('/pedido','PedidoController@index');
+
+Route::get('/cadastroProduto','ProdutoController@create');
+Route::post('/cadastroProduto', 'ProdutoController@create');
 
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/pedido','PedidoController@create');
+Route::post('/pedido','PedidoController@create');
 
 Auth::routes();
 

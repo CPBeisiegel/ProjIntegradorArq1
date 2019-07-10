@@ -19,11 +19,14 @@ class Produtos extends Migration
             $table->string("tipo_produto");
             $table->string("descricao_prod");
             $table->decimal("preco_venda");
-            $table->float("imagens");
+            $table->float("imagens")->nullable();
             $table->string("codigo_do_produto");
             $table->string("codigo_categoria");
-            $table->string("codugo_fornecedor");
-            $table->decimal("unidade_em_estoque");
+            $table->string("codigo_fornecedor");
+            $table->string("departamento");
+            $table->decimal("quantidade_em_estoque");
+            $table->string("nome_loja");
+            $table->decimal("estoque_maximo");
             $table->string("produto_status");
             $table->timestamps();
         });

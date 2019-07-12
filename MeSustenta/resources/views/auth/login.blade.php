@@ -1,7 +1,85 @@
-@extends('layouts.app')
 
-@section('content')
-<div class="container">
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <title>MeSustenta</title>
+</head>
+<body>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <div class="card-header">{{ __('Login') }}</div>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" method="post" action="{{ route('login') }}">
+        @csrf
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="img/logofinal1.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="email"><b>{{ __('E-Mail Address') }}</b></label>
+          <input type="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Digite seu E-mail" name="email" required autocomplete="email" autofocus>
+          <i class="fa fa-eye-slash" style="font-size: 2.4em"></i>
+                 @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+          
+          <div class="linhaSenha">
+            <label for="password"><b>{{ __('Password') }}</b></label><a href="#">Esqueceu?</a>
+            <input type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Digite sua Senha" name="password" required autocomplete="current-password">
+                @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+         </div>
+
+          <button type="submit"> {{ __('Login') }}</button>
+          <label for="remember">
+            <input type="checkbox" class="form-check-input" checked="checked" name="remember" id="remember"  {{ old('remember') ? 'checked' : '' }}>{{ __('Remember Me') }}
+          </label>
+        </div>
+        <!--Footer modal Login Início -->
+        <div class="containerFooter">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-outinfo-line cancelbtn">Cancel</button>
+          <div class="width-100%"></div>
+          <button type="submit" onclick="myFuncCadastro()" class="bntCadastro ">Cadastre-se</button>
+            @if (Route::has('password.request'))
+                <a class="btn btn-link" href="{{ route('password.request') }}">
+                    {{ __('Forgot Your Password?') }}
+                </a>
+            @endif
+        </div>
+      </form>
+    </div>
+     <!--Footer modal Login Fim -->
+  
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+  
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    
+    function myFuncCadastro() {
+      location.href = {{ __('cadastro') }};
+    }
+    </script>
+    
+    </body>
+    </html>
+
+<!-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,5 +147,5 @@
             </div>
         </div>
     </div>
-</div>
-@endsection
+</div> -->
+

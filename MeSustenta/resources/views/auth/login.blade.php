@@ -1,20 +1,7 @@
-
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <title>MeSustenta</title>
-</head>
-<body>
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
     <div class="card-header">{{ __('Login') }}</div>
     <div id="id01" class="modal">
-        <form class="modal-content animate" method="post" action="{{ route('login') }}">
+        <form class="modal-content animate" method="POST" action="{{ route('login') }}">
         @csrf
         <div class="imgcontainer">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -76,9 +63,7 @@
     }
     </script>
     
-    </body>
-    </html>
-
+    
 <!-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

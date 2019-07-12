@@ -34,45 +34,10 @@
                 </div>
                 <div class="row d-flex justify-content-around col-4">
                     <div id="divRightLineTwo" class="col-5">
-                        <!-- Botão para acionar modal -->
-                        <button id="buttonLogin" type="button" class="btn btn-outline-info col-12" data-toggle="modal"
-                            data-target="#ExemploModalCentralizado">
-                            <i class="fa fa-user" style="font-size:1.3em;color:#4fc4be"></i> Olá, faça seu login!
-                        </button>
+                        @include('auth.login')
+                               
                     </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
-                        aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header d-flex justify-content-center align-items-center"
-                                    style="background-color:#041847">
-                                    <img src="img/iconLogoFinal.png">
-                                    <h5 class="modal-title" id="TituloModalCentralizado" style="color: #4fc4be">Login
-                                    </h5>
-                                    <button type="button" class="close btn btn-info" data-dismiss="modal"
-                                        aria-label="Fechar">
-                                        <span aria-hidden="true" style="color: #4fc4be">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="#" method="POST">
-                                        <label>e-mail</label>
-                                        <input type="e-mail"><br>
-                                        <label>Senha</label>
-                                        <input type="password"> <i class="fa fa-eye-slash" style="font-size: 1.4em"></i>
-                                    </form>
-                                </div>
-                                <div class="modal-footer" style="background-color:#041847">
-                                    <a href="/cadastro"  class="btn btn-outline-info btn-primary">Cadastre-se</a>
-                                    <button type="submit" class="btn btn-outline-info btn-primary">Login</button>
-                                    <!--   <button type="text" class="btn btn-secondary btn-info" data-dismiss="modal">Fechar</button>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="cadastrar" class="d-flex align-items-center col-4">
-                                    
+                    <div id="cadastrar" class="d-flex align-items-center col-4">     
                         <a id="addLogin" href="/cadastro" style="font-size:0.8em;color:#4fc4be">
                             <i class="fa fa-user-plus" style="font-size:1.3em;color:#4fc4be"></i>
                             Cadastre-se

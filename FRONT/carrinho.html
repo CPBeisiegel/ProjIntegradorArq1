@@ -39,63 +39,49 @@
             <h1>Meu Carrinho</h1>
             <button type="submit" class="btn btn-outline-info">Fechar Pedido</button>
         </div>  
-        <div id="cabecalhoGrid">
-            <div id="prod">
-                <h4>Produto</h4>
-            </div>
-            <div id="preco">
-                <h4>Preço</h4>
-            </div>
-            <div id="quant">
-                <h4>Quantidade</h4>
-            </div>
-            <div id="total">
-                <h4>Total</h4>
-            </div>
-            <div id="remove">
-                <p>Remover</p>
-            </div>
-            <div id="imgProduto">
-                <img src="img/LaLoba/bolsaBordada.png" alt="bolsa">
-            </div>
-            <div id="desc">
-                <p>Descrição do Produto</p>
-                <p>Vendido por:</p>
-                <input type="checkbox" name=checPresente checked>
-                <Label>Este item é para presente</Label>
-            </div>
-            <div>
-                <p>R$ 0,00</p>
-            </div> 
-            <div>
-                <i class="icon icon-minus-sign"></i>
-                <select name="quantProduto" id="quantProduto">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                </select>
-            </div>  
-            <div>
-                <p>R$ 0,00</p>
-            </div>  
-            <div>
-                <a href="#">
-                    <span class="glyphicon glyphicon-remove"></span>
-                </a>
-            </div> 
-        </div>
-        
-            
-                  
-             
-            
+                
+        <table id="tabelaCar">
+            <tr>
+                <thead>
+                    <th colspan="3">Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                    <th></th>
+                </thead>
+            </tr>
+            <tbody>
+                <tr>
+                    <td colspan="3">
+                        <img src="img/LaLoba/bolsaBordada.png" alt="bolsa">   
+                        <p>Bolsa Bordada</p>
+                        <p> Vendido por: La Loba</p>
+                    </td>   
+                    <td>R$ 0,00</td>
+                    <td>
+                        <i class="icon icon-minus-sign"></i>
+                        <select name="quantProduto" id="quantProduto">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>  
+                    <td>R$ 0,00</td>
+                    <td>
+                        <a dref="#">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         
         <div id="cupomDesconto">
             <a href="#">
@@ -109,7 +95,12 @@
 
             </fieldset>
         </div>
-
+        <p>Sub-total</p>  
+        <p>frete</p>
+        <p>Total</p>
+        <div>
+                <button type="" class="btn btn-outline-info">Escolher mais produtos</button>
+            </div>
         <div>
             <button type="submit" class="btn btn-outline-info">Fechar Pedido</button>
         </div>

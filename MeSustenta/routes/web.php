@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
     return view('template');
@@ -42,6 +43,7 @@ Route::post('/produto/editar/{id}',"ProdutoController@editar");
 Route::get('/pedido','PedidoController@create');
 Route::post('/pedido','PedidoController@create');
 
+Route::get('/password','passwordController@index');
 
 
 

@@ -30,12 +30,18 @@ Route::get('/alimentos', 'AlimentosController@index');
 Route::get('/departamentos','DepartamentoController@index');
 Route::get('/carrinho', 'CarrinhoController@index');
 Route::get('/pedido','PedidoController@index');
+Route::get('/produtosGerais','ProdutoController@produtosgerais')->name('produtosGerais');
 
 Route::get('/cadastroProduto','ProdutoController@create');
 Route::post('/cadastroProduto', 'ProdutoController@create');
 
+Route::get('/produto/editar/{id}',"ProdutoController@editar"); 
+Route::post('/produto/editar/{id}',"ProdutoController@editar");
+
 
 Route::get('/pedido','PedidoController@create');
 Route::post('/pedido','PedidoController@create');
+
+
 
 

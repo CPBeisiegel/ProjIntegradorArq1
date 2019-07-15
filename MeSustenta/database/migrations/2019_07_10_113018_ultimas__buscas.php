@@ -22,7 +22,7 @@ class UltimasBuscas extends Migration
             $table->unsignedBigInteger('fk_idCategoria');
             $table->timestamps();
 
-            $table->foreign('fk_idCliente')->references('idCliente')->on('clientes');
+            $table->foreign('fk_idCliente')->references('id')->on('clientes');
             $table->foreign('fk_idCategoria')->references('idCategoria')->on('categorias');
         });
     }

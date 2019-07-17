@@ -1,5 +1,5 @@
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-    <div class="card-header">{{ __('Login') }}</div>
+    <button onclick="document.getElementById('id01').style.display='block'" class=" btn btn-outline-info" style="font-size:0.8em;"><i class="fa fa-user-plus" style="font-size:1.3em;color:#4fc4be"></i>Login</button>
+    <div class="card-header" hidden>{{ __('Login') }}</div>
     <div id="id01" class="modal">
         <form class="modal-content animate" method="POST" action="{{ route('login') }}">
         @csrf
@@ -36,14 +36,14 @@
         <div class="containerFooter">
           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-outinfo-line cancelbtn">Cancel</button>
           <div class="width-100%"></div>
-          <button type="submit" onclick="myFuncCadastro()" class="bntCadastro ">Cadastre-se</button>
+          <button type="submit"  onclick="myFuncCadastro()" class="bntCadastro ">Cadastre-se</button>
             @if (Route::has('password.request'))
                 <a class="btn btn-link" href="{{ route('password.request') }}">
                     {{ __('Forgot Your Password?') }}
                 </a>
             @endif
         </div>
-      </form>
+      </form> 
     </div>
      <!--Footer modal Login Fim -->
   
@@ -59,7 +59,7 @@
     }
     
     function myFuncCadastro() {
-      location.href = {{ __('cadastro') }};
+      location.href = {{ __("cadastro") }};
     }
     </script>
     

@@ -33,19 +33,46 @@
                     <a href="home.html"><img src="img/logofinal1.png" alt="Logo MeSustenta"></a>
                 </div>
                 <div class="row d-flex justify-content-around col-4">
-                    <div id="divRightLineTwo" class="col-5">
-                        @include('auth.login')
-                               
-                    </div>
-                    <div id="cadastrar" class="d-flex align-items-center col-4">     
-                        <a id="addLogin" href="/cadastro" style="font-size:0.8em;color:#4fc4be">
-                            <i class="fa fa-user-plus" style="font-size:1.3em;color:#4fc4be"></i>
-                            Cadastre-se
-                        </a>
-                    </div>
+                    @guest
+                        <div id="divRightLineTwo" class="col-5">           
+                                @include('auth.login') 
+                        </div>
+                        <div id="cadastrar" class="d-flex align-items-center col-4">     
+                            <a id="addLogin" href="/cadastro" style="font-size:0.8em;color:#4fc4be">
+                                <i class="fa fa-thumbs-up" style="font-size:1.3em;color:#4fc4be"></i>
+                                Cadastre-se
+                            </a>
+                        </div>
+                    @endguest  
+                
+                    @auth
+                    <div id="containerLogado">
+                        <p id="primNome">
+                            <a class="btn btn-primary btn-outline-info" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                               Olá, {{ auth()->user()->prim_nome}}
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div id=menuDeslogar class="card card-body">
+                                <p>                             
+                                    <a href="/EditarCadastro">
+                                        <button id="btnEditarCd" type="button" class="btn btn-outline-info col-12" style="font-size:0.8em;color:#4fc4be">
+                                            <i class="fa fa-pencil-square-o" style="font-size:1.6em;color:#4fc4be"></i>Editar Cadastro
+                                        </button>
+                                    </a>
+                                </p>
+                                <a href="/logout" ><button id="buttonLogout" type="button" class="btn btn-outline-info col-12" style="font-size:0.8em;color:#4fc4be">
+                                    <i class="fa fa-user-times" style="font-size:1.3em;color:#4fc4be"></i>Logout!</button>
+                                </a>
+                            </div>
+                        </div>   
+                    </div>          
+                    @endauth
+
                     <div>
                         <a href="#"><img src="img/iconeCarP.png" alt=""></a>
                     </div>
+                </div>
             </nav>
             <nav id="navBase" class="container-fluid">
                 <!-- Menu Hamburguer Início-->

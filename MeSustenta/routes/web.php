@@ -24,6 +24,9 @@ Route::get('/teste', function() {
 
 Route::get('/principal',"PrincipalController@index");
 
+
+Route::get('/home',"PrincipalController@index");
+
 Route::get('/cadastro','CadastroController@index');
 Route::post('/cadastro', 'Auth\RegisterController@create');
 Route::get('/contato','ContatoController@index');
@@ -48,4 +51,6 @@ Route::post('/pedido','PedidoController@create');
 Route::get('/password','passwordController@index');
 
 
+/* Logout */ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+/* Editar Cadastro */ Route::get('/EditarCadastro','CadastroController@editar');
 

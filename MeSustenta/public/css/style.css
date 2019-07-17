@@ -718,3 +718,43 @@ footer .ftr{
         flex-flow: row wrap;
     }   
 } 
+
+/*========================================================
+    Template - Quando estiver Logado
+==========================================================*/
+
+#primNome{
+    margin: 0.1vh;
+}
+
+#primNome a{
+    font-size:0.8em;
+}
+
+#btnEditarCd{
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnEditarCd i{
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuDeslogar{
+    background: #041847;
+    z-index: 1000;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    max-width: 50vw;
+
+}
+
+#menuDeslogar p{
+    margin: 0.8vh;
+}

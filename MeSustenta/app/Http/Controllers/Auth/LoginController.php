@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
+use Auth;/*teste logout*/
+use Illuminate\Http\Request; /*teste logout*/
 use App\Cliente; 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -25,7 +27,28 @@ class LoginController extends Controller
      *
      * @var string
      */
+
+   /* ====================================================================
+            Teste NATH - Início
+      ====================================================================*/
     protected $redirectTo = '/sucessoTeste';
+
+    /* ====================================================================
+            Teste NATH - Fim
+       ====================================================================*/
+
+    /* ====================================================================
+            Teste Logout - Início
+       ====================================================================*/
+
+    public function logout(Request $request) {
+        Auth::logout();
+        return redirect('/principal');
+      }
+
+    /* ====================================================================
+            Teste Logout - Fim
+    ====================================================================*/
 
     /**
      * Create a new controller instance.

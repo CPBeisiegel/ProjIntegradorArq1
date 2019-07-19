@@ -10,8 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
-
+Auth::routes(
+    
+);
+Route::get('/sucessoTeste', 'Auth\LoginController@teste');
 Route::get('/', function () {
     return view('template');
 });
@@ -24,6 +26,9 @@ Route::get('/teste', function() {
 // Rotas principais
 
 Route::get('/principal',"PrincipalController@index");
+
+
+Route::get('/home',"PrincipalController@index");
 
 Route::get('/cadastro','CadastroController@index');
 Route::post('/cadastro', 'Auth\RegisterController@create');
@@ -66,4 +71,6 @@ Route::post('/carrinho/adicionar/{id}','CarrinhoController@adicionar');
 
 
 
+/* Logout */ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+/* Editar Cadastro */ Route::get('/EditarCadastro','CadastroController@editar');
 

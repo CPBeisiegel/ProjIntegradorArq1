@@ -22,7 +22,7 @@ class Compras extends Migration
             $table->unsignedBigInteger("fk_idPagamento");
             $table->timestamps();
 
-            $table->foreign('fk_idCliente')->references('idCliente')->on('clientes');
+            $table->foreign('fk_idCliente')->references('id')->on('clientes');
             $table->foreign('fk_idPagamento')->references('idPagamento')->on('pagamentos');
         });
     }

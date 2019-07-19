@@ -52,6 +52,11 @@
                 <label>Status do Produto</label>
                 <input type="text" class="form-control casds" name="statusProduto">
             </div>
+            <div>
+                <label>Imagem</label>
+                <input type="text">
+            </div>
+
 
         </div>
 

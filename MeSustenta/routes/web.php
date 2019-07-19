@@ -54,8 +54,6 @@ Route::post('/produto/editar/{id}',"ProdutoController@editar");
 
 // Route::deletar('/produto/excluir','PedidoController@excluir');
 
-// Route::get();
-// Route::post();
 
 // Routes Pedido + Carrinho 
 

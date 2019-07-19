@@ -5,6 +5,7 @@
 <ul>
 
 @foreach ($todosProdutos as $produto)
+    <div class=""></div>
     <li>{{$produto->nome_produto}} <a href="/produto/editar/{{$produto->idProduto}}">Editar</a></li>
     
 

@@ -21,6 +21,8 @@ class ProdutoController extends Controller
 
     public function create(Request $request){
 
+        $data = $request->all();
+
          if($request->isMethod('GET')){
             return view('cadastroProduto');
 
@@ -39,8 +41,31 @@ class ProdutoController extends Controller
         $novoProduto->nome_loja = $request->nomeloja;
         $novoProduto->preco_venda = $request->precoVenda;
         $novoProduto->produto_status = $request->statusProduto;
-    
+        $novoProduto->imagens = "";
+        
+
+
         $resultado = $novoProduto->save();
+
+
+        if(Input::file('imagens')){
+            $name = kebab_case($request->name).uniqid($post->id);
+            $extensao = $request->imagens->extensao();
+            $nameImage = "{$name}.$extensao";
+            $data['imagens'] = $nameImage;
+
+            $upload = $request->imagens->storeAs('imagens', $nameImage);
+
+            if(!upload)
+                return redirect()
+                    ->back()
+                    ->with('erro','Falha ao fazer o upload da imagem');
+                    
+
+        }
+    
+        
+        $post->update($data);
 
         return view('cadastroProduto',["resultado" => $resultado]);
 
@@ -73,5 +98,5 @@ class ProdutoController extends Controller
            ->with( "produto",$produto);
     }
 
-    
+
 }

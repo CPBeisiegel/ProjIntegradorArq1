@@ -54,8 +54,8 @@
                         </p>
                         <div class="collapse" id="collapseExample">
                             <div id=menuDeslogar class="card card-body">
-                                <p>                             
-                                    <a href="/EditarCadastro">
+                                <p id="editarCad">                             
+                                    <a href="/editarCadastro/{{auth()->user()->id}}">
                                         <button id="btnEditarCd" type="button" class="btn btn-outline-info col-12" style="font-size:0.8em;color:#4fc4be">
                                             <i class="fa fa-pencil-square-o" style="font-size:1.6em;color:#4fc4be"></i>Editar Cadastro
                                         </button>

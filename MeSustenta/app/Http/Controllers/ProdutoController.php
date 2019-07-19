@@ -41,14 +41,14 @@ class ProdutoController extends Controller
         $novoProduto->nome_loja = $request->nomeloja;
         $novoProduto->preco_venda = $request->precoVenda;
         $novoProduto->produto_status = $request->statusProduto;
-        $novoProduto->imagens = "";
+        $novoProduto->imagens = $request->imagens;
         
 
 
         $resultado = $novoProduto->save();
 
 
-        if(Input::file('imagens')){
+        if($request->file('imagens')){
             $name = kebab_case($request->name).uniqid($post->id);
             $extensao = $request->imagens->extensao();
             $nameImage = "{$name}.$extensao";
@@ -56,16 +56,17 @@ class ProdutoController extends Controller
 
             $upload = $request->imagens->storeAs('imagens', $nameImage);
 
-            if(!upload)
+            if(!$upload)
                 return redirect()
                     ->back()
                     ->with('erro','Falha ao fazer o upload da imagem');
                     
 
         }
+
     
         
-        $post->update($data);
+        // $post->update($data);
 
         return view('cadastroProduto',["resultado" => $resultado]);
 

@@ -47,6 +47,7 @@
                 <label>Status do Produto</label>
                 <input type="text" class="form-control casds" name="statusProduto" value="{{$produto->statusProduto}}">
             </div>
+            
 
         </div>
 

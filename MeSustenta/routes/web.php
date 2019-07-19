@@ -10,9 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes(
-    
-);
+Auth::routes();
+
 Route::get('/sucessoTeste', 'Auth\LoginController@teste');
 Route::get('/', function () {
     return view('template');
@@ -31,7 +30,7 @@ Route::get('/principal',"PrincipalController@index");
 Route::get('/home',"PrincipalController@index");
 
 Route::get('/cadastro','CadastroController@index');
-Route::post('/cadastro', 'Auth\RegisterController@create');
+// Route::post('/cadastro', 'Auth\RegisterController@create');
 Route::get('/contato','ContatoController@index');
 Route::get('/sobre', 'SobreController@index');
 Route::get('/alimentos', 'AlimentosController@index');
@@ -56,10 +55,11 @@ Route::post('/produto/editar/{id}',"ProdutoController@editar");
 
 
 // Routes Pedido + Carrinho 
+Route::middleware(['auth'])->group(function() {
+    Route::get('/carrinho','CarrinhoController@index');
+    Route::get('/carrinho/exibir', 'CarrinhoController@exibir');
+});
 
-Route::get('/carrinho','CarrinhoController@index');
-
-Route::get('/carrinho/exibir', 'CarrinhoController@exibir');
 Route::post('/carrinho/exibir', 'CarrinhoController@exibir');
 
 Route::get('/carrinho/adicionar/{id}','CarrinhoController@adicionar');

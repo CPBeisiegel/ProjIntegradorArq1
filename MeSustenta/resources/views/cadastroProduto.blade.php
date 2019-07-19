@@ -53,8 +53,16 @@
                 <input type="text" class="form-control casds" name="statusProduto">
             </div>
             <div>
-                <label>Imagem</label>
-                <input type="text">
+                <label>Imagem do Produto</label>
+                <input type='file' class="form-control casds" name="imagens" id="imagens" value='Escolher arquivo'/>
+                <img src="{{asset('img/VivaAmazon/saisBanho.png')}}" alt="">
+                <img src="{{asset('img/VivaAmazon/saboneteArgila.png')}}" alt="">
+                <img src="{{asset('img/VivaAmazon/saboneteEsfoliante.png')}}" alt="">
+                <img src="{{asset('img/VivaAmazon/saboneteEsfoliante.png')}}" alt="">
+                <img src="{{asset('img/VivaAmazon/manteigaHidratante.png')}}" alt="">
+                <img src="{{asset('img/VivaAmazon/manteigaHidratante.png')}}" alt="">
+                <img src="{{asset('img/VivaAmazon/manteigaHidratante.png')}}" alt="">
+                <input type="hidden" name="imagens" value="">
             </div>
 
 
@@ -63,6 +71,12 @@
         <button type="submit">Cadastrar Produto</button>
 
 </form>
+
+
+       
+
+        
+
 
 @if(isset($resultado))
 

@@ -28,19 +28,28 @@
         <div class="preco">
           <span>R$ 35,00</span>
         </div>
+
+        <form class="form-add-carrinho" action="/carrinho/adicionar/2" method="post">
+        @csrf
         <div class="row">
           <div class="quant">
             <label>Quantidade</label>
-            <input type="text" class="quantidade"> 
+
+            <input type="hidden" class="idProd" nome="idProduto"> 
+            <input type="hidden" class="nomeProduto" nome="nome_produto">
+            <input type="number" class="quantidade" nome="quantidade_em_estoque">
           </div>         
           
         </div>
         <div class="row">
           <div class="btn2">
-          <button type="button" class="btn btn-primary rounded-pill btnn ">Adicionar ao Carinho</button>
+          <button type="submit" class="btn btn-primary rounded-pill btnn ">Adicionar ao Carinho</a></button>
           </div>
-          
-        </div>
+         </div> 
+       </form>
+
+
+        
         <div class="info">
             <div class="card text-center">
                 <div class="card-header">

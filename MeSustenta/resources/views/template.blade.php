@@ -70,7 +70,7 @@
                     @endauth
 
                     <div>
-                        <a href="#"><img src="img/iconeCarP.png" alt=""></a>
+                        <a href="/carrinho/exibir"><img src="img/iconeCarP.png" alt=""></a>
                     </div>
                 </div>
             </nav>

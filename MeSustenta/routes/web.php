@@ -22,6 +22,9 @@ Route::get('/teste', function() {
     return view('welcome');
 });
 
+
+// Rotas principais
+
 Route::get('/principal',"PrincipalController@index");
 
 
@@ -31,12 +34,17 @@ Route::get('/cadastro','CadastroController@index');
 Route::post('/cadastro', 'Auth\RegisterController@create');
 Route::get('/contato','ContatoController@index');
 Route::get('/sobre', 'SobreController@index');
-Route::get('/produto', 'ProdutoController@index');
 Route::get('/alimentos', 'AlimentosController@index');
 Route::get('/departamentos','DepartamentoController@index');
-Route::get('/carrinho', 'CarrinhoController@index');
+Route::get('/carrinho', 'PedidoController@index');
 Route::get('/pedido','PedidoController@index');
+Route::get('/password','passwordController@index');
+
+
+// Rotas Produto
 Route::get('/produtosGerais','ProdutoController@produtosgerais')->name('produtosGerais');
+
+Route::get('/produto', 'ProdutoController@index');
 
 Route::get('/cadastroProduto','ProdutoController@create');
 Route::post('/cadastroProduto', 'ProdutoController@create');
@@ -44,11 +52,23 @@ Route::post('/cadastroProduto', 'ProdutoController@create');
 Route::get('/produto/editar/{id}',"ProdutoController@editar"); 
 Route::post('/produto/editar/{id}',"ProdutoController@editar");
 
+// Route::deletar('/produto/excluir','PedidoController@excluir');
 
-Route::get('/pedido','PedidoController@create');
-Route::post('/pedido','PedidoController@create');
+// Route::get();
+// Route::post();
 
-Route::get('/password','passwordController@index');
+// Routes Pedido + Carrinho 
+
+Route::get('/carrinho','CarrinhoController@index');
+
+Route::get('/carrinho/exibir', 'CarrinhoController@exibir');
+Route::post('/carrinho/exibir', 'CarrinhoController@exibir');
+
+Route::get('/carrinho/adicionar/{id}','CarrinhoController@adicionar');
+Route::post('/carrinho/adicionar/{id}','CarrinhoController@adicionar');
+
+// Route::deletar('/carrinho/remover','PedidoController@remover');
+
 
 
 /* Logout */                   

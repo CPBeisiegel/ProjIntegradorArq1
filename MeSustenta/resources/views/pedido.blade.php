@@ -2,45 +2,48 @@
 
 @section('container')
 
-<h1>Realizar Pedido</h1>
+<h1>Pedido</h1>
 
-<form action="/pedido" method="post">
+<form action="/pedido" method="post" class="form-pedido">
 @csrf
 
-<section class="container">
+<div class="container">
 
-<div class="card cadastro-conteudo col-md-8">
-        <div class="form-group" >
-        
-            <div>
-                <label>Itens</label>
-                <input type="text" class="form-control casds" name="pedidoItens">
-            </div>
-            <div>
-                <label>Valor do Frete</label>
-                <input type="number" class="form-control casds" name="valorFrete">
-                <label>Data de Entrega</label>
-                <input type="datetime" class="form-control casds" name="dataEntrega">
-            </div>
-            <div>
-                <label>Destinatário</label>
-                <input type="text" class="form-control casds" name="nomeDestinatario">
-                <label>Email</label>
-                <input type="email" class="form-control casds" name="emailCliente">
-                <label>Endereço de Entrega</label>
-                <input type="text" class="form-control casds" name="enderecoDestinatario">
-                <label>Cidade</label>
-                <input type="text" class="form-control casds" name="cidadeDestino">
-                <label>CEP</label>
-                <input type="number" class="form-control casds" name="cepDestino">
-            </div>
+<table class="table table-striped table-inverse table-responsive">
+    <thead class="thead-inverse">
+        <tr>
+            <th class="validar carrinho" colspan="3">Produtos</th>
+            <th>Remover</th>
+            <th>Quantidade</th>
+            <input type="hidden" class="idPedido" nome="idPedido">
+            <input type="hidden" class="itens" nome="pedido_itens">
+            <input type="hidden" class="codCliente" nome="codigoCliente">
             
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($resultado as $resultado)
+            <tr>
+              <td>{{ $product_id->idProduto }}</td>           
+              <td>{{ $itens->item }}</td>
+              <td>{{ $nomeproduto->nome_produto}}</td>
+              <td>{{ $qty->quantidade}}
+              <td>
+                <a class="btn deep-orange" href="{{ route() }}">Editar</a>
+                <a class="btn red" href="{{ route() }}">Deletar</a>
+              </td>
+            </tr>
+          @endforeach
+        </tbody>
+</table>
+       
 
-        </div>
-
-        <button type="submit">Enviar Pedido</button>
+        <button type="submit">Fechar Pedido</button>
 
 </form>
+
+</div>
 
 
 

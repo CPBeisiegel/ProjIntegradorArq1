@@ -72,4 +72,6 @@ class ProdutoController extends Controller
             ->with("resultado", $resultado)
            ->with( "produto",$produto);
     }
+
+    
 }

@@ -44,7 +44,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="#"><img src="img/iconeCarP.png" alt=""></a>
+                        <a href="/carrinho/exibir"><img src="img/iconeCarP.png" alt=""></a>
                     </div>
             </nav>
             <nav id="navBase" class="container-fluid">

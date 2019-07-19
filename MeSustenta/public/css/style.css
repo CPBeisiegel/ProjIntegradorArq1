@@ -738,6 +738,10 @@ footer .ftr{
     align-items: center;
 }
 
+#editarCad a{
+    text-decoration: none;
+}
+
 #btnEditarCd i{
     display:flex;
     flex-flow: row;

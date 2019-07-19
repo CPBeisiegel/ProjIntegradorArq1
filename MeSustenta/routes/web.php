@@ -69,6 +69,10 @@ Route::post('/carrinho/adicionar/{id}','CarrinhoController@adicionar');
 
 
 
-/* Logout */ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
-/* Editar Cadastro */ Route::get('/EditarCadastro','CadastroController@editar');
+/* Logout */                   
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
+/* Editar Cadastro Cliente*/   
+Route::get('/editarCadastro/{id}','CadastroController@editar')->middleware('auth');  
+Route::post('/editarCadastro/{id}','CadastroController@editar')->middleware('auth');
+Route::post('/editarCadastroClientes/{id}','CadastroController@mostrar');

@@ -55,13 +55,13 @@
             <div>
                 <label>Imagem do Produto</label>
                 <input type='file' class="form-control casds" name="imagens" id="imagens" value='Escolher arquivo'/>
-                <img src="{{asset('img/VivaAmazon/saisBanho.png')}}" alt="">
-                <img src="{{asset('img/VivaAmazon/saboneteArgila.png')}}" alt="">
-                <img src="{{asset('img/VivaAmazon/saboneteEsfoliante.png')}}" alt="">
-                <img src="{{asset('img/VivaAmazon/saboneteEsfoliante.png')}}" alt="">
-                <img src="{{asset('img/VivaAmazon/manteigaHidratante.png')}}" alt="">
-                <img src="{{asset('img/VivaAmazon/manteigaHidratante.png')}}" alt="">
-                <img src="{{asset('img/VivaAmazon/manteigaHidratante.png')}}" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
                 <input type="hidden" name="imagens" value="">
             </div>
 

@@ -10,6 +10,7 @@
     <div class="card-body">
         <h5 class="card-title">{{$produto->nome_produto}} <a href="/produto/editar/{{$produto->idProduto}}">Editar</a></h5>
         <p class="card-text">{{$produto->descricao_pro}} <a href="/produto/editar/{{$produto->descricao}}"></a></p>
+        <button class="btn btn-info right"><a href="/carrinho/exibir">Comprar</a></button>
     </div>
     <!-- <ul class="list-group list-group-flush">
         <li class="list-group-item"></li>

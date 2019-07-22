@@ -513,6 +513,14 @@ h1#contatonome{
     align-self: center;
 }
 
+.card-prodGerais{
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.prodGerais{
+   margin: 10px;
+}
 .arm{
     margin-top:20px; 
 }

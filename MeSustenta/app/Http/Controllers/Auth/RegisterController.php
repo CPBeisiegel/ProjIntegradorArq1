@@ -92,6 +92,6 @@ class RegisterController extends Controller
         $novoCliente->cliente_status = 1;
         $novoCliente->save();
 
-        return view('resposta');
+        return view('principal');
     }
 }

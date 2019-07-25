@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-use Auth;/*teste logout*/
-use Illuminate\Http\Request; /*teste logout*/
+use Auth;/* logout*/
+use Illuminate\Http\Request; /* logout*/
 use App\Cliente; 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;

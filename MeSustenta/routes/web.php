@@ -10,10 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes(
-    
-);
-Route::get('/sucessoTeste', 'Auth\LoginController@teste');
+
+
 Route::get('/', function () {
     return view('template');
 });
@@ -31,7 +29,7 @@ Route::get('/principal',"PrincipalController@index");
 Route::get('/home',"PrincipalController@index");
 
 Route::get('/cadastro','CadastroController@index');
-Route::post('/cadastro', 'Auth\RegisterController@create');
+
 Route::get('/contato','ContatoController@index');
 Route::get('/sobre', 'SobreController@index');
 Route::get('/alimentos', 'AlimentosController@index');
@@ -54,8 +52,6 @@ Route::post('/produto/editar/{id}',"ProdutoController@editar");
 
 // Route::deletar('/produto/excluir','PedidoController@excluir');
 
-// Route::get();
-// Route::post();
 
 // Routes Pedido + Carrinho 
 
@@ -72,9 +68,24 @@ Route::post('/carrinho/adicionar/{id}','CarrinhoController@adicionar');
 
 
 /* Logout */                   
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
 
 /* Editar Cadastro Cliente*/   
-Route::get('/editarCadastro/{id}','CadastroController@editar')->middleware('auth');  
-Route::post('/editarCadastro/{id}','CadastroController@editar')->middleware('auth');
-Route::post('/editarCadastroClientes/{id}','CadastroController@mostrar');
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -21,23 +21,13 @@
             <div>
                 <label>Sobrenome</label>
                 <input type="text" class="form-control casds" name="lastName" placeholder="Sobrenome">
-            </div>
-            <div>
-                <label>Data de Nascimento</label>
-                <input type="date" class="form-control casds" name='data_nasc' placeholder="Data de Nascimento">
-            </div>
-            <div>
-                <label>RG</label>
-                <input type="text" class="form-control casds" name='rg' placeholder="RG">
-            </div>
-            <div>
-                <label>CPF</label>
-                <input type="text" class="form-control casds" name='cpf' placeholder="CPF">
-            </div>
+            </div>         
 
         </div>
+    </form>    
 
 
+    <form method="POST"action="/cadastro">
         <!-- Informações Endereço -->
         <div class="form-group">
 
@@ -73,6 +63,9 @@
 
         </div>
 
+    </form>    
+
+    <form method="POST"  action="/cadastro">
         <!-- Informações de Login -->
 
         <div class="form-group" >

@@ -30,7 +30,7 @@
                     </form>
                 </div>
                 <div id="containerMeio" class="col-3 d-flex justify-content-center align-items-center">
-                    <a href="/principal"><img src="img/logofinal1.png" alt="Logo MeSustenta"></a>
+                    <a href="/principal"><img src="" alt="Logo MeSustenta"></a>
                 </div>
                 <div class="row d-flex justify-content-around col-4">
                     @guest
@@ -119,7 +119,7 @@
                     <!--   Comeco menu de Departamentos -->
                     <li id="listaDepartamentos" class="navbar-item dropdown">
                         <a class="nav-link dropdown-toggle botao-busca tituloMenu" data-toggle="dropdown" href="#"
-                            role="button" aria-haspopup="true" aria-expanded="false">Departamentos</a>
+                            role="button" aria-haspopup="true" aria-expanded="false">Categorias</a>
                         <div class="dropdown-menu subMenu">
                             <a class="dropdown-item subTitulo" href="pageDepartamentos.html">Alimentos</a>
                             <a class="dropdown-item subTitulo" href="#">Beleza</a>
@@ -144,7 +144,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/28.png" class="d-block w-100" alt="...">
+                    <img src="img/o-que-sustenta-a-sustentabilidade-baixa-1000x500.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Reutilizar</h3>
                         <p>A ação de reutilizar um produto é poder dar uma nova utilidade para algo que, normalmente,

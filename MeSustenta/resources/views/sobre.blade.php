@@ -8,7 +8,7 @@
 
         <div class="sobre-controle row">
             <video controls poster="" class="col-12 col-sm-10 col-md-12 col-lg-12 col-xl-10 videomd">
-                <source src="video/3Rs.mp4" type="video/mp4">
+                <source src="{{asset('video/3Rs.mp4') }}" type="video/mp4">
             </video>
             <article class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 textovideo">

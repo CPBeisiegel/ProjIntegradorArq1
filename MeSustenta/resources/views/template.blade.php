@@ -30,7 +30,7 @@
                     </form>
                 </div>
                 <div id="containerMeio" class="col-3 d-flex justify-content-center align-items-center">
-                    <a href="home.html"><img src="img/logofinal1.png" alt="Logo MeSustenta"></a>
+                    <a href="/principal"><img src="img/logofinal1.png" alt="Logo MeSustenta"></a>
                 </div>
                 <div class="row d-flex justify-content-around col-4">
                     @guest

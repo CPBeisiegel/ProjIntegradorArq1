@@ -19,7 +19,7 @@ class Produtos extends Migration
             $table->string("tipo_produto");
             $table->string("descricao_prod");
             $table->decimal("preco_venda");
-            $table->float("imagens")->nullable();
+            $table->string("imagens")->nullable();
             $table->string("codigo_do_produto");
             $table->string("codigo_categoria");
             $table->string("codigo_fornecedor");

@@ -81,6 +81,11 @@
                 <label for="exampleFormControlInput1">Email</label>
                 <input type="email" class="form-control casds" id="exampleFormControlInput1" name="email"
                     placeholder="nome@email.com">
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
             </div>
 
             <div>

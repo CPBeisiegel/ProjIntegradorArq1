@@ -52,12 +52,31 @@
                 <label>Status do Produto</label>
                 <input type="text" class="form-control casds" name="statusProduto">
             </div>
+            <div>
+                <label>Imagem do Produto</label>
+                <input type='file' class="form-control casds" name="imagens" id="imagens" value='Escolher arquivo'/>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <input type="hidden" name="imagens" value="">
+            </div>
+
 
         </div>
 
         <button type="submit">Cadastrar Produto</button>
 
 </form>
+
+
+       
+
+        
+
 
 @if(isset($resultado))
 

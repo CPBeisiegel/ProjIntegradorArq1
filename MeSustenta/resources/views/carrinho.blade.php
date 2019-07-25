@@ -1,7 +1,7 @@
 @extends('template')
 
 @section('container')
-<h1>Carinho</h1>
+<h1>Carrinho</h1>
 <ul>
 
 <form action="/carrinho" method="post" class="form-pedido">

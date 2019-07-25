@@ -52,7 +52,7 @@ class RegisterController extends Controller
        
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
-            "lastName"=>['required', 'sting'],
+            "lastName"=>['required', 'string'],
             'data_nasc'=>['required','date'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:clientes'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
@@ -62,8 +62,8 @@ class RegisterController extends Controller
             'uf'=>['string'],
             'cidade'=> ['string'],
             'cep'=> ['string'],
-            'rg'=>['bigInteger'],
-            'cpf'=> ['bigInteger']
+            'rg'=>['numeric'],
+            'cpf'=> ['numeric']
         ]);
     }
 
@@ -92,6 +92,6 @@ class RegisterController extends Controller
         $novoCliente->cliente_status = 1;
         $novoCliente->save();
 
-        return view('principal');
+        return redirect('/principal');
     }
 }

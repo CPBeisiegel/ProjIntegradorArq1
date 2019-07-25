@@ -21,6 +21,8 @@ class ProdutoController extends Controller
 
     public function create(Request $request){
 
+        $data = $request->all();
+
          if($request->isMethod('GET')){
             return view('cadastroProduto');
 
@@ -39,12 +41,19 @@ class ProdutoController extends Controller
         $novoProduto->nome_loja = $request->nomeloja;
         $novoProduto->preco_venda = $request->precoVenda;
         $novoProduto->produto_status = $request->statusProduto;
-    
+        $novoProduto->imagens = $request->imagens;
+        
+
+
         $resultado = $novoProduto->save();
 
+                    
         return view('cadastroProduto',["resultado" => $resultado]);
 
-    }
+        }
+
+        
+    
      
     public function editar(Request $request, $id){
         if($request->isMethod('GET')){
@@ -73,5 +82,7 @@ class ProdutoController extends Controller
            ->with( "produto",$produto);
     }
 
-    
+
 }
+
+

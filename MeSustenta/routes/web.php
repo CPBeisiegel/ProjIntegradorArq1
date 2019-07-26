@@ -10,7 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', function () {
     return view('template');
@@ -69,14 +71,13 @@ Route::post('/carrinho/adicionar/{id}','CarrinhoController@adicionar');
 
 
 /* Logout */                   
-
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 /* Editar Cadastro Cliente*/   
+Route::get('/editarCadastro/{id}','CadastroController@editar')->middleware('auth');  
+Route::post('/editarCadastro/{id}','CadastroController@editar')->middleware('auth');
 
 
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 
